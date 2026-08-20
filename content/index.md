@@ -4,7 +4,7 @@ title: Notes
 
 # Dávid's Notes
 
-Use as you wish!
+Use as you wish! :)
 
 ## Mathematics
 
