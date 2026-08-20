@@ -4,6 +4,8 @@ configuration:
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
+  customCss:
+    - styles/custom.scss
   analytics:
     provider: plausible
   locale: en-US
@@ -21,7 +23,7 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
+        light: rgb(22,22,24)
         lightgray: "#e5e5e5"
         gray: "#b8b8b8"
         darkgray: "#4e4e4e"
@@ -159,14 +161,16 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      title: "Explorer"
+      folderClickBehavior: "collapse"
+      folderDefaultState: "collapsed"
+      useSavedState: true
     layout:
       position: left
       priority: 50
   - source: "@quartz-community/graph"
-    enabled: true
-    layout:
-      position: right
-      priority: 10
+    enabled: false
   - source: "@quartz-community/search"
     enabled: true
     layout:
