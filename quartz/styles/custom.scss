@@ -204,3 +204,29 @@ body,
     }
   }
 }
+// 1. Expand the overall container to take up more of the screen
+.page {
+  max-width: 90vw; // Default is ~1500px. You can use 90vw, 1800px, or 'unset' for 100% full width
+}
+
+// 2. Adjust sidebar widths (desktop layout)
+@media all and not ($mobile) {
+  // Left sidebar (Explorer)
+  .sidebar.left {
+    width: 320px;       // Adjust as needed (default is around 250px)
+    max-width: 380px;
+    flex-shrink: 0;
+  }
+
+  // Right sidebar (Backlinks, Graph, Table of Contents)
+  .sidebar.right {
+    width: 280px;       // Adjust as needed
+    max-width: 350px;
+    flex-shrink: 0;
+  }
+
+  // Center reading area
+  .center {
+    max-width: unset;   // Allows your notes/content to expand into the extra space
+  }
+}
