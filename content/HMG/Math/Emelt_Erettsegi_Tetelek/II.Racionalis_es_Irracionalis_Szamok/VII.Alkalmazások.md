@@ -1,0 +1,12 @@
+• Racionális számok: arányok, arányosság, hasonlóság 
+• Irracionális számok: szabályos háromszög magassága $(\frac{a\sqrt{3}}{2})$, négyzet átlója $(a\sqrt{2})$ a , kör kerülete $(2r\pi)$, területe $(r^2\pi)$ 
+•Kifejezések legbõvebb értelmezési tartományának meghatározása, pl. $\sqrt{x+2} + \frac{1}{\sqrt{x+2}}$ 
+• Függvény értékkészletének megállapítása 
+
+**Matematikatörténeti vonatkozások:** 
+•Az elsõ számírások nem a mai írásjelekkel, hanem szimbólumokkal, jelekkel (pl. ékírás, római számok) történtek. A mai számírást a XI. században az arab al-Hvárizmi matematikus írta le elõször. Európába Fibonacci olasz matematikus a XII. században hozta be, de csak a XV-XVI. században terjedt el. Fibonacci nem csak a 10 számjegyet, hanem a helyi értékes számírást is elhozta Európába. „Van tíz hindu jel: $9, 8, 7, 6, 5, 4, 3, 2, 1, 0$. Ezen jelek segít ségével bármilyen számot fel lehet írni, amit csak akarunk.” 
+• A zérust jelentõ szó elõször 100 körül jelent meg a hinduknál. 
+• Az irracionális számokat már Pitagorasz (Kr. e. 450 körül) is ismerte, ekkor a hinduk már ismerték a négyzet oldalának és átlójának viszonyát. • A negatív számok viszonylag késõn jelentek meg: az egyenletek megoldásakor kaptak olyan számokat, amiket elõször nem tudtak értelmezni. Cardano (1501–1576) olasz matematikus fiktív számoknak nevezte õket, Viète (1540–1603) francia matematikus elvetette létezésüket. 
+• Descartes francia matematikus 1637-ben már minden elõítélet nélkül használta az általa hamis számoknak nevezett negatív számokat. 
+• Gauss (1777–1855) német matematikus részletesen tárgyalta a komplex számok algebráját és aritmetikáját, ahol $\sqrt{-1} =i$ . 
+• A halmazelmélet megteremtése Cantor (1845–1918) német matematikushoz fûzõdik. Kortársai többsége nem értette meg a végtelen halmazok számosságával kapcsolatos gondolatait: a természetes számok halmaza valódi részhalmaza a racionális számok halmazának, számos ságuk mégis egyenlõ. Meghatározása szerint két halmaz egyenlõ számosságú, ha elemeik között kölcsönösen egyértelmû hozzárendelés létesíthetõ. Hozzá fûzõdik a megszámlálható halmazok fogalma. A róla elnevezett [Cantor-féle átlós eljárással](Cantor_Atlo.md) bizonyította, hogy a valós számok nem megszámlálhatóak.

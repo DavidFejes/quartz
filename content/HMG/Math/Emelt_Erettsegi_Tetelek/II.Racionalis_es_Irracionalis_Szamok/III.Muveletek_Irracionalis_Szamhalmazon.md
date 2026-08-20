@@ -1,0 +1,1 @@
+Az alapmûveletek definiálhatók az irracionális számok körében úgy, hogy az eddigi azonosságok életben maradjanak. Mivel tizedes tört alakjuk végtelen, nem periodikus, így azt csak közelítõen tudjuk megadni. Ezért a pontos értékeket pl. hatvány, gyök, logaritmus alakban adjuk meg, ilyenkor viszont a megfelelõ mûveleti szabályokkal dolgozunk.
