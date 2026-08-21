@@ -7,7 +7,7 @@ Bontsuk fel a jobb oldalon álló $n$ darab zárójelet: mindegyik összegből k
 $\dbinom{n}{k}$-féleképpen lehet az $n$ darab tényezőből azt a $k$ darabot kiválasztani, amelyikből a $b$ szorzótényezőt vesszük. Tehát az $a^{n-k} \cdot b^k$ tagból $\dbinom{n}{k}$ darab van, tehát ez a tag együtthatója.
 
 Így a szorzat a tételbeli alakba írható.
-
+^binomalis-tetel
 ---
 ### A binomiális együtthatók tulajdonságai:
 
