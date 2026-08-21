@@ -1,7 +1,7 @@
-Az oszthatóság fogalmánál alaphalmaznak az egész számok halmazát tekintjük. Két egész szám hányadosa nem mindig egész szám, az oszthatóságnál azt vizsgáljuk, hogy egész számok osztásakor mikor lesz a hányados is egész szám, vagyis a maradék $0$. 
+Az oszthatóság fogalmánál alaphalmaznak az egész számok halmazát tekintjük. Két egész szám hányadosa nem mindig egész szám, az ==oszthatóságnál azt vizsgáljuk, hogy egész számok osztásakor mikor lesz a hányados is egész szám==, vagyis a maradék $0$. 
 	
-**DEFINÍCIÓ**: Egy $a$ egész szám osztója egy $b$ egész számnak, ha található olyan *c* egész szám, amelyre $a \cdot c = b$. Jelölés: $a|b$. (Természetesen $c|b$ is igaz). Ebben az esetben az is igaz, hogy $b$ osztható $a$-val és $c$-vel. Ekkor azt is mondhatjuk, hogy $b$ többszöröse $a$-nak. A $0$ szerepe a számelméletben: 
-	• a $0$ minden nemnulla egész számnak többszöröse (0-szorosa), azaz $0$ minden nemnulla egész számmal osztható ugyanis $0 = 0 \cdot a;\; a|0$, ha $a \neq 0$. Ez azt is jelenti, hogy a $0$ páros szám. A $0$-nak egyetlen többszöröse van a 0, viszont a $0$ bármely egész számnak a többszöröse. 
+**DEFINÍCIÓ**: Egy $a$ egész szám ==osztó==ja egy $b$ egész számnak, ha található olyan *c* egész szám, amelyre $a \cdot c = b$. Jelölés: $a|b$. (Természetesen $c|b$ is igaz). Ebben az esetben az is igaz, hogy $b$ osztható $a$-val és $c$-vel. Ekkor azt is mondhatjuk, hogy $b$ többszöröse $a$-nak. A $0$ szerepe a számelméletben: 
+	• a $0$ minden nemnulla egész számnak többszöröse ($0$-szorosa), azaz $0$ minden nemnulla egész számmal osztható ugyanis $0 = 0 \cdot a;\; a|0$, ha $a \neq 0$. Ez azt is jelenti, hogy a $0$ páros szám. A $0$-nak egyetlen többszöröse van a 0, viszont a $0$ bármely egész számnak a többszöröse. 
 	• a $0$ nem osztója egyetlen nemnulla egész számnak sem, ugyanis ha $0$ osztója lenne egy b nem nulla egész számnak, akkor létezne egy olyan c egész szám, amikre $b = c \cdot 0 = 0$ lenne, ami ellentmond azzal a feltétellel, hogy $b \neq 0$. Oszthatósági tételek: Ha $a, b, c \in\mathbb{Z}$, akkor 
 
 ---
