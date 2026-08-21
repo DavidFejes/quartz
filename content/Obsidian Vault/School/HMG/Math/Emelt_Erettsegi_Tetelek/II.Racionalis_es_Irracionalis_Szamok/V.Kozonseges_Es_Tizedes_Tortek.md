@@ -13,4 +13,4 @@ A közönséges törtek formái lehetnek: Az $a$ $b$ közönséges tört, vagyis
 		A két egyenletet kivonva egymásból $$233,1 = 99x \implies x = \frac{233,1}{99} = \frac{2331}{990}$$
 		– nem szakaszos tizedes törtek nem írhatóak át közönséges tört alakba.
 
-**Összefoglalva**: A közönséges törtek mind felírhatók tizedes tört alakban (egész, véges, végtelen szakaszos tört alak ban). A nem szakaszos tizedes törtek mind irracionális számok, tehát nem írhatók fel két egész szám hányadosaként, tehát nem közönséges törtek. Ebbõl következik, hogy nem minden tizedes tört közönséges tört.
+**Összefoglalva**: A közönséges törtek mind felírhatók tizedes tört alakban (egész, véges, végtelen szakaszos tört alak ban). ==A nem szakaszos tizedes törtek mind irracionális számok==, tehát nem írhatók fel két egész szám hányadosaként, tehát nem közönséges törtek. Ebbõl következik, hogy ==nem minden tizedes tört közönséges tört==.

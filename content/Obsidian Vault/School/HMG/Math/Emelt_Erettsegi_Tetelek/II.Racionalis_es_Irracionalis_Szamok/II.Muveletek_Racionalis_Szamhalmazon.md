@@ -6,11 +6,11 @@ Ha a racionális számok közönséges tört alakúak, akkor a következõ szab�
 = \frac{a \cdot d}{b \cdot d} + \frac{c \cdot b}{d \cdot b}
 = \frac{a \cdot d + c \cdot b}{b \cdot d},
 \quad \text{ahol } b,d \neq 0$$
-	Ha a nevezõk ($b$ és $d$) [[III.Osztok#^relativ-primek|relatív prímek]], akkor a legkisebb közös többszörösük a szorzatuk.
+	Ha a nevezõk ($b$ és $d$) [[III.Osztok#^relativ-primek|relatív prímek]], akkor a [[III.Osztok#^legkisebb-kozos-tobbszoros|legkisebb közös többszörösük]] a szorzatuk.
 	**• Szorzás**: Törtet törttel úgy szorzunk, hogy a számlálót a számlálóval, nevezõt a nevezõvel szorozzuk:
 	$$\frac{a}{b} \cdot \frac{c}{d} = \frac{a \cdot c}{b \cdot d}, \quad ahol \; b,d \neq 0 $$
 	Egész számmal úgy szorzunk törtet, hogy törtként írjuk fel a szorzót $(c =\frac{c}{1})$, vagyis igazából a számlálót megszorozzuk, a nevezőt változatlanul hagyjuk.
-	**• Osztás**: Törtet törttel úgy osztunk, hogy a változatlan osztandót szorozzuk az osztó reciprokával:
+	**• Osztás**: Törtet törttel úgy osztunk, hogy a változatlan osztandót szorozzuk az osztó ==reciprokával==:
 	$$
 	\frac{a}{b}:\frac{c}{d}= \frac{a \cdot d}{b \cdot c}, \quad ahol \; b,c,d \neq 0
 	$$

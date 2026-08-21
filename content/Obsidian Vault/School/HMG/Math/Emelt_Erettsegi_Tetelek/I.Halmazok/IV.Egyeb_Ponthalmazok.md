@@ -27,7 +27,7 @@
 ---
 **TÉTEL**: Három egyenestõl egyenlõ távolságra lévõ pontok halmaza a síkon: 
 • Ha a $3$ egyenes párhuzamos, akkor üres halmaz. 
-• Ha $2$ egyenes párhuzamos ($e|f$), egy pedig metszi õket ($g$), akkor a $2$ párhuzamos egyenes [[III.Nevezetes_ponthalmazok#^kozepparhuzamos|középpárhuzamosán]] két olyan pont, amelyek illeszkednek két metszõ egyenes (pl. e és g) szögfelezõire.
+• Ha $2$ egyenes párhuzamos ($e|f$), egy pedig metszi õket ($g$), akkor a $2$ párhuzamos egyenes [[III.Nevezetes_ponthalmazok#^kozepparhuzamos|középpárhuzamosán]] két olyan pont, amelyek illeszkednek két metszõ egyenes (pl. e és g) ==szögfelezõire==.
 <p align="center">
   <img src="Pasted image 20260817130442.png" />
 </p>
@@ -41,7 +41,7 @@ Ha a 3 egyenes egy pontban metszi egymást, akkor egyetlen pont, a 3 egyenes met
 </p>
 
 ---
-DEFINÍCIÓ: Azoknak a pontoknak a halmaza a síkon, amelyekbõl egy adott szakasz adott a szög ben (0º < $\alpha$ < 180º) látszik két, a szakasz egyenesére szimmetrikusan elhelyezkedõ körív (látókörívek).
+DEFINÍCIÓ: Azoknak a pontoknak a halmaza a síkon, amelyekbõl egy adott szakasz adott a szög ben (0º < $\alpha$ < 180º) látszik két, a szakasz egyenesére szimmetrikusan elhelyezkedõ körív (==látókörívek==).
 <p align="center">
   <img src="Pasted image 20260817131118.png" />
 </p>
