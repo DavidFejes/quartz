@@ -1,5 +1,0 @@
-DEFINÍCIÓ: Egyenlõtlenségrõl beszélünk, ha algebrai kifejezéseket a $<, >, \leq, ≥$ jelek valamelyikével kapcsoljuk össze. Ha ezek a kifejezések másodfokúak, akkor másodfokú egyenlõtlenségrõl beszélünk. A másodfokú egyenlet megoldásához hasonlóan 0-ra rendezünk úgy, hogy a fõegyüttható pozitív legyen, tehát $a > 0$. Ekkor $ax^2 + bx + c ≥ 0$, $ax^2 + bx + c > 0$, $ax^2 + bx + c \leq 0$, $ax2 + bx + c < 0$ alakúra rendezhetõ minden másodfokú egyenlõtlenség.
-
-Az egyenlõtlenségek megoldási módszerei hasonlóak az egyenletek megoldási módszereihez: 
-1. A mérlegelv, alkalmazása nehézkes másodfokú egyenlõtlenségek esetében. 
-2. Grafikus megoldás: A másodfokú egyenlõtlenségek megoldásánál fontos szerepet játszik, hogy az egyenlõtlenségekben szereplõ másodfokú kifejezések grafikonja a koordináta-rend szerben az $y$ tengellyel párhuzamos tengelyû parabola. Az egyenlõtlenségben szereplõ má sodfokú kifejezés zérushelyének megállapítása után vázlatosan ábrázoljuk a kifejezést leíró másodfokú függvényt. Majd a zérushelyek számának függvényében meghatározzuk a meg oldáshalmazt. (lásd 20. tétel)

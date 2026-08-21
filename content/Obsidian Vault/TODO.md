@@ -1,0 +1,12 @@
+- [ ] Universal search that does not care about ekezet (öüóőúéáű)
+- [ ] Replacing all weird characters plugin
+- [ ] Custom file order
+- [x] 13
+- [x] 16
+- [x] 23
+- [x] 24
+- [x] kölcsönösen egyértelmû megfeleltetés létesíthetõ
+- [x] Setup Quartz
+- [ ] Quartz .left
+- [ ] Quartz .search
+- [ ] 
