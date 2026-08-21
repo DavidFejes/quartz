@@ -55,6 +55,6 @@ $$
 \binom{n}{0}+\binom{n}{1}+\binom{n}{2}+\ldots+\binom{n}{n-1}+\binom{n}{n}  
 $$
 
--nel a [[II.Binomalis_Tetel#^^binomalis-tetel|binomalis ]] miatt.
+-nel a [[II.Binomalis_Tetel#^^binomalis-tetel|binomális tétel]] miatt.
 
 ---

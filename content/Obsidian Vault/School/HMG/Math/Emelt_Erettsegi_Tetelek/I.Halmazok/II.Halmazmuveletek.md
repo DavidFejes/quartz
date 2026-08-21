@@ -1,5 +1,5 @@
 
-**DEFINÍCIÓ**: Azt a halmazt, amelynek a vizsgált halmazok részhalmazai, alaphalmaznak vagy univerzumnak nevezzük. Jele: U vagy H. 
+**DEFINÍCIÓ**: Azt a halmazt, amelynek a vizsgált halmazok részhalmazai, ==alaphalmaz==nak vagy ==univerzum==nak nevezzük. Jele: U vagy H. 
 	
 **DEFINÍCIÓ:** Egy A halmaz [komplementer halmazának](Komplementer_Halmaz.png) az alaphalmaz azon elemeinek halmazát nevezzük, amelyek az A halmaznak nem elemei. Jele: $\overline{A}$. (Fontos tulajdonság: $\overline{\overline{A}} = A$.)
 	
