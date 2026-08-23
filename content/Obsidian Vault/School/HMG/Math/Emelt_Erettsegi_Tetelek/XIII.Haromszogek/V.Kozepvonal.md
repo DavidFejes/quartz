@@ -1,4 +1,4 @@
-**DEFINÍCIÓ:** A háromszög két oldalfelezõ pontját összekötõ szakaszt a háromszög középvonalá nak nevezzük. Minden háromszögnek 3 középvonala van. 
+**DEFINÍCIÓ:** A háromszög két oldalfelezõ pontját összekötõ szakaszt a háromszög ==középvonal==á nak nevezzük. Minden háromszögnek 3 középvonala van. 
 
 ---
 **TÉTEL:** A háromszög középvonala párhuzamos a felezõpontokat nem tartalmazó oldallal, és fele olyan hosszú.

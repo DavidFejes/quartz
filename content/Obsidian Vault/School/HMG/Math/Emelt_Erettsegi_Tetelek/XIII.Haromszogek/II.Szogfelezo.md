@@ -1,5 +1,5 @@
 **DEFINÍCIÓ:**
-Egy konvex szög szögfelezõje a szög csúcsából kiinduló, a szögtartományban haladó azon félegyenes, amely a szöget két egyenlõ nagyságú szögre bontja. 
+Egy ==konvex szög szögfelezõje== a szög csúcsából kiinduló, a szögtartományban haladó azon félegyenes, amely a szöget két egyenlõ nagyságú szögre bontja. 
 
 ---
 **TÉTEL:** Egy konvex szögtartományban a száraktól egyenlõ távolságra lévõ pontok halmaza a szög felezõ. 
@@ -20,7 +20,7 @@ A bizonyítás során kiderült, hogy $O$ egyenlő távol van a háromszög olda
 A bizonyítás során kiderült, hogy $O$ egyenlő távol van a háromszög oldalaitól, ezért köréje egy olyan kör írható, amely a háromszög oldalait érinti.
 
 ---
-**TÉTEL:** A háromszög egy belsõ, és a másik két csúcshoz tartozó külsõ szögfelezõje egy pontban metszi egymást, ez a pont a háromszög hozzáírt körének középpontja. A háromszögnek 3 hozzáírt köre van.
+**TÉTEL:** A háromszög egy belsõ, és a másik két csúcshoz tartozó külsõ szögfelezõje egy pontban metszi egymást, ez a pont a ==háromszög hozzáírt körének középpontja==. A háromszögnek 3 hozzáírt köre van.
 <p align="center">
   <img src="Pasted image 20260819121724.png" />
 </p>

@@ -1,7 +1,7 @@
-**DEFINÍCIÓ:** A háromszög magassága az egyik csúcsból a szemközti oldal egyenesére bocsátott merõleges szakasz. A háromszög magasságának egyenese a háromszög magasságvonala. 
+**DEFINÍCIÓ:** A ==háromszög magassága== az egyik csúcsból a szemközti oldal egyenesére bocsátott merõleges szakasz. A háromszög magasságának egyenese a háromszög magasságvonala. 
 
 ---
-**TÉTEL:** A háromszög magasságvonalai egy pontban metszik egymást. Ez a pont a háromszög magasságpontja.
+**TÉTEL:** A háromszög magasságvonalai egy pontban metszik egymást. Ez a pont a háromszög ==magasságpontja==.
 **BIZONYÍTÁS:** Visszavezetjük a háromszög oldalfelezõ merõlegeseire vonatkozó tételre.
 <p align="center">
   <img src="Pasted image 20260819130427.png" />

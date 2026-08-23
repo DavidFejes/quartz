@@ -1,6 +1,4 @@
-Gyökvesztés következhet be, ha a változót tartalmazó kifejezéssel osztjuk az egyenlet mindkét oldalát, vagy olyan átalakítást végzünk, amely szűkíti az értelmezési tartományt.
-
-Gyökvesztés következhet be, ha a változót tartalmazó kifejezéssel osztjuk az egyenlet mindkét oldalát, vagy olyan átalakítást végzünk, amely szűkíti az értelmezési tartományt.
+Gyökvesztés következhet be, ==ha a változót tartalmazó kifejezéssel osztjuk az egyenlet mindkét oldalát==, vagy olyan átalakítást végzünk, amely szűkíti az értelmezési tartományt.
 
 ---
 $$
