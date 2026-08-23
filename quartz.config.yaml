@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Git Documentation
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -20,28 +20,28 @@ configuration:
     typography:
       header: "Inter"
       body: "Inter"
-      code: IBM Plex Mono
+      code: "JetBrains Mono"
     colors:
       lightMode:
-        light: rgb(22,22,24)
+        light: "#faf8f8"
         lightgray: "#e5e5e5"
         gray: "#b8b8b8"
         darkgray: "#4e4e4e"
         dark: "#2b2b2b"
-        secondary: "#284b63"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
+        secondary: "#5c4ec4"
+        tertiary: "#7b68ee"
+        highlight: "rgba(143, 159, 169, 0.15)"
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
-        gray: "#646464"
-        darkgray: "#d4d4d4"
-        dark: "#ebebec"
-        secondary: "#7b97aa"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        light: "#161616"
+        lightgray: "#222222"
+        gray: "#626262"
+        darkgray: "#dcddde"
+        dark: "#ffffff"
+        secondary: "#9d8bf5"
+        tertiary: "#b6a8fc"
+        highlight: "rgba(157, 139, 245, 0.12)"
+        textHighlight: "#ffd60040"
 plugins:
   - source: "@quartz-community/created-modified-date"
     enabled: true
@@ -159,97 +159,75 @@ plugins:
     enabled: true
   - source: "@quartz-community/tag-page"
     enabled: true
-  - source: "@quartz-community/explorer"
-    enabled: true
-    options:
-      title: Explorer
-      folderClickBehavior: collapse
-      folderDefaultState: collapsed
-      useSavedState: true
-    layout:
-      position: left
-      priority: 50
-  - source: "@quartz-community/graph"
-    enabled: false
-  - source: "@quartz-community/search"
-    enabled: true
-    layout:
-      position: left
-      priority: 20
-  - source: "@quartz-community/backlinks"
-    enabled: true
-    layout:
-      position: right
-      priority: 50
-  - source: "@quartz-community/article-title"
-    enabled: true
-    layout:
-      position: beforeBody
-      priority: 10
-  - source: "@quartz-community/content-meta"
-    enabled: true
-    layout:
-      position: beforeBody
-      priority: 20
-  - source: "@quartz-community/tag-list"
-    enabled: false
-    layout:
-      position: beforeBody
-      priority: 30
+
+  # --- LEFT SIDEBAR (Ordered: Title -> Darkmode -> Search -> Explorer) ---
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
       position: left
       priority: 10
+
   - source: "@quartz-community/darkmode"
     enabled: true
     layout:
       position: left
-      priority: 30
-      group: toolbar
+      priority: 20
+
   - source: "@quartz-community/reader-mode"
+    enabled: false # Set to false to match the clean single-icon look
+
+  - source: "@quartz-community/search"
     enabled: true
     layout:
       position: left
-      priority: 35
-      group: toolbar
-  - source: "@quartz-community/breadcrumbs"
+      priority: 30
+
+  - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      title: "" # Empty string removes the "Explorer" header
+      folderClickBehavior: collapse
+      folderDefaultState: open
+      useSavedState: true
+    layout:
+      position: left
+      priority: 40
+
+  # --- RIGHT SIDEBAR ---
+  - source: "@quartz-community/graph"
+    enabled: false
+  - source: "@quartz-community/backlinks"
+    enabled: true
+    layout:
+      position: right
+      priority: 50
+
+  # --- MAIN CONTENT AREA ---
+  - source: "@quartz-community/breadcrumbs"
+    enabled: false # Disabled to remove the long path above your title
     layout:
       position: beforeBody
       priority: 5
       condition: not-index
-  - source: "@quartz-community/comments"
-    enabled: false
-    options:
-      provider: giscus
-      options: {}
+
+  - source: "@quartz-community/article-title"
+    enabled: true
     layout:
-      position: afterBody
+      position: beforeBody
       priority: 10
-  - source: "@quartz-community/footer"
+
+  - source: "@quartz-community/content-meta"
     enabled: true
-    options:
-      links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
     layout:
-      position: footer
-      priority: 50
-  - source: "@quartz-community/recent-notes"
+      position: beforeBody
+      priority: 20
+
+  - source: "@quartz-community/tag-list"
     enabled: false
-  - source: "@quartz-community/spacer"
-    enabled: true
-    options: {}
-    order: 25
     layout:
-      position: left
-      priority: 25
-      display: mobile-only
-  - source: "@quartz-community/bases-page"
-    enabled: true
-    options: {}
-    order: 50
+      position: beforeBody
+      priority: 30
+
   - source: "@quartz-community/note-properties"
     enabled: true
     options:
@@ -267,6 +245,39 @@ plugins:
       position: beforeBody
       priority: 15
       display: all
+
+  - source: "@quartz-community/comments"
+    enabled: false
+    options:
+      provider: giscus
+      options: {}
+    layout:
+      position: afterBody
+      priority: 10
+
+  - source: "@quartz-community/footer"
+    enabled: true
+    options:
+      links:
+        GitHub: https://github.com/jackyzha0/quartz
+    layout:
+      position: footer
+      priority: 50
+
+  - source: "@quartz-community/recent-notes"
+    enabled: false
+  - source: "@quartz-community/spacer"
+    enabled: true
+    options: {}
+    order: 25
+    layout:
+      position: left
+      priority: 25
+      display: mobile-only
+  - source: "@quartz-community/bases-page"
+    enabled: true
+    options: {}
+    order: 50
   - source: "@quartz-community/obsidian-plugin-excalidraw"
     enabled: true
     options:
@@ -274,17 +285,11 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
-  - source: github:quartz-community/obsidian-plugin-excalidraw
-    enabled: true
-    options:
-      enableInteraction: true
-      darkMode: auto
-      exportPadding: 20
-    order: 50
+
 layout:
   groups:
     toolbar:
-      priority: 35
+      priority: 20
       direction: row
       gap: 0.5rem
   byPageType:
@@ -295,13 +300,9 @@ layout:
         right: []
     content: {}
     folder:
-      exclude:
-        - reader-mode
       positions:
         right: []
     tag:
-      exclude:
-        - reader-mode
       positions:
         right: []
     canvas: {}
