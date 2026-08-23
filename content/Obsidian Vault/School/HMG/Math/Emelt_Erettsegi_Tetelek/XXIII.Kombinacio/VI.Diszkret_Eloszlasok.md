@@ -19,6 +19,6 @@ Az összes esetek száma: $\binom{N}{n}$, mert $N$ db-ból kell $n$ db-ot válas
 Ezt felhasználva kapjuk: $P(\xi = k) = \frac{\binom{M}{k} \cdot \binom{N-M}{n-k}}{\binom{N}{n}}$.
 
 ---
-**TÉTEL:** A hipergeometrikus eloszlásnál az $A$ tulajdonságú elemek számának várható értéke:
+**TÉTEL:** A hipergeometrikus eloszlásnál az $A$ tulajdonságú elemek számának ==várható értéke==:
 
 $$M(\xi) = n \cdot p = n \cdot \frac{M}{N}$$

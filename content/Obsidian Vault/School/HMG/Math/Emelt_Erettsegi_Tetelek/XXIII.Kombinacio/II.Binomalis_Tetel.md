@@ -1,6 +1,6 @@
 **TÉTEL:** $(a + b)^n = \dbinom{n}{0}a^n b^0 + \dbinom{n}{1}a^{n-1}b^1 + \dbinom{n}{2}a^{n-2}b^2 + \dots + \dbinom{n}{n-1}a^1 b^{n-1} + \dbinom{n}{n}a^0 b^n$.
 
-A tételben szereplő $\dbinom{n}{k}$ együtthatókat binomiális együtthatóknak nevezzük.
+A tételben szereplő $\dbinom{n}{k}$ együtthatókat ==binomiális együtthatóknak== nevezzük.
 
 **BIZONYÍTÁS:** $(a + b)^n = (a + b)(a + b)(a + b)\dots(a + b)$.  
 Bontsuk fel a jobb oldalon álló $n$ darab zárójelet: mindegyik összegből ki kell választani az egyik tagot, ezeket a tagokat össze kell szorozni, majd a kapott szorzatokat össze kell adni. Mindegyik kapott szorzat $n$ tényezőből áll, mindegyikben szerepel $a$ és $b$, mégpedig $a^{n-k} \cdot b^k$ alakban, mert a zárójelből vagy $a$-t, vagy $b$-t választunk, $a$-ból $n - k$ darabot, $b$-ből $k$ darabot.  

@@ -1,6 +1,6 @@
 A kombinatorika, a valószínûség-számítás és a matematikai statisztika a véletlen tömegjelenségek törvényszerûségével foglalkozik. A kombinatorika tárgyát képezik a sorba rendezési és a részhalmaz kiválasztási problémák, a kombinatorika rendszerint dolgok megszámlálásával foglalkozik. 
 
-**DEFINÍCIÓ:** Legyen \ •. Ha ezekbõl $k$ ($k \leq n$) db-ot kiválasztunk minden lehetséges módon úgy, hogy a kiválasztott elemek sorrendjére nem vagyunk tekintettel, azaz $n$ elem $k$-ad osztályú ismétlés nélküli kombinációját kapjuk. 
+**DEFINÍCIÓ:** Legyen $n$ egymástól különbözõ elemünk. Ha ezekbõl $k$ ($k \leq n$) db-ot kiválasztunk minden lehetséges módon úgy, hogy a kiválasztott elemek sorrendjére nem vagyunk tekintettel, azaz $n$ elem $k$-ad osztályú ==ismétlés nélküli kombináció==ját kapjuk. 
 
 ---
 **TÉTEL:** Az $n$ elem $k$-ad osztályú az ismétlés nélküli kombinációinak száma:
@@ -16,6 +16,6 @@ Erre pedig bevezetjük az $\binom{n}{k}$ szimbólumot.
 
 ---
 
-**DEFINÍCIÓ:** Ha $n$ különböző elemből kell $k$ elemet kiválasztani úgy, hogy a kiválasztás sorrendje nem számít és a már kiválasztott elemeket újra kiválaszthatjuk, akkor az $n$ elem $k$-ad osztályú ismétléses kombinációját kapjuk.
+**DEFINÍCIÓ:** Ha $n$ különböző elemből kell $k$ elemet kiválasztani úgy, hogy a kiválasztás sorrendje nem számít és a már kiválasztott elemeket újra kiválaszthatjuk, akkor az $n$ elem $k$-ad osztályú ==ismétléses kombináció==ját kapjuk.
 
 **TÉTEL:** Az  $n$ elem $k$-ad osztályú ismétléses kombinációjának száma: $\binom{n+k-1}{k}$.
