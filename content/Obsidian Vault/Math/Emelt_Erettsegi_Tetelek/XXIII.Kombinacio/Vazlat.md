@@ -5,4 +5,4 @@ III. [[III.Esemenyek|Események]]: elemi események, eseménytér, biztos, lehet
 IV. [[IV.Muveletek_Esemenyekkel|Mûveletek eseményekkel]] ($A + B, A \cdot B, \overline{A}$) 
 V. [[V.Valoszinuseg_Szamitas_Alapjai|Valószinűség]] definíciója, mûveletek valószínûsége, axiómák 
 VI. [[VI.Diszkret_Eloszlasok|Hipergeometrikus]] eloszlás 
-VII. [[VII.Alkalmazasok|Alkalmazások]], matematikatörténeti vonatkozások
+VII. [[Math/Emelt_Erettsegi_Tetelek/XXIII.Kombinacio/VII.Alkalmazasok|Alkalmazások]], matematikatörténeti vonatkozások

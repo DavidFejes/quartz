@@ -11,7 +11,7 @@
 
 **DEFINÍCIÓ**: Az A és B halmaz [különbsége](Kulonbseg.png) az A halmaz mindazon elemeinek halmaza, amelyek a B halmaznak nem elemei. Jele: $A \setminus B$. 
 	
-**DEFINÍCIÓ**: Az A és B halmaz [Descartes](Descartes)-féle szorzata az a halmaz, amelynek elemei az összes olyan rendezett (a; b) pár, amelynél  $a \in A \;és\; b \in B$. Jele: $A \times B$.
+**DEFINÍCIÓ**: Az A és B halmaz [Descartes](Descartes.md)-féle szorzata az a halmaz, amelynek elemei az összes olyan rendezett (a; b) pár, amelynél  $a \in A \;és\; b \in B$. Jele: $A \times B$.
 
 ### Halmazműveletek tulajdonságai
 

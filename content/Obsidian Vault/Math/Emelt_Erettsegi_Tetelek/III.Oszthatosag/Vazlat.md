@@ -3,4 +3,4 @@
 	II. [Prímszám, összetett szám](II.Primszamok_Osszetett_Szamok.md), számelmélet alaptétele, osztók száma 
 	III. Legnagyobb közös [osztó](Osztok), legkisebb közös többszörös 
 	IV. [Számrendszerek](IV.Szamrendszerek.md) 
-	V. [Alkalmazások](School/HMG/Math/Emelt_Erettsegi_Tetelek/III.Oszthatosag/V.Alkalmazasok.md), matematikatörténeti vonatkozások
+	V. [Alkalmazások](Math/Emelt_Erettsegi_Tetelek/III.Oszthatosag/V.Alkalmazasok.md), matematikatörténeti vonatkozások
