@@ -1,4 +1,5 @@
-• Legnagyobb közös osztó: törtek egyszerûsítése • Legkisebb közös többszörös: törtek közös nevezõre hozása 
+• Legnagyobb közös osztó: törtek egyszerûsítése 
+• Legkisebb közös többszörös: törtek közös nevezõre hozása 
 • Kétismeretlenes egyenlet megoldása a természetes számok halmazán (oszthatóság felhasz nálásával) pl.: 
 $$\begin{aligned}
 3x+2 &=xy\\

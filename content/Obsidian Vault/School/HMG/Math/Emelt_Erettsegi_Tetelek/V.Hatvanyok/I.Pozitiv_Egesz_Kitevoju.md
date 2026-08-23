@@ -1,7 +1,7 @@
 **Kidolgozás:**
 	A hatványozást ugyanaz az igény hívta létre, mint a szorzást. A szorzás az ismételt összeadást je lenti, a hatványozást azonos számok szorzására vezették be, késõbb kiterjesztették az értelmezését.
 
-**DEFINÍCIÓ**: Ha $a$ tetszõleges valós szám és $n\; 1$-nél nagyobb természetes szám, akkor $a^n$ hatvány azt az $n$ tényezõs szorzatot jelenti, amelynek minden tényezõje $a$. Ha $n = 1$, akkor $a^1 = a$. Az $a$ számot a hatvány alapjának, az $n$ számot a hatvány kitevõjének nevezzük, ez utóbbi megmutatja, hogy a hatványalapot hányszor kell szorzótényezõül venni. 
+**DEFINÍCIÓ**: Ha $a$ tetszõleges valós szám és $n\; 1$-nél nagyobb természetes szám, akkor $a^n$ ==hatvány== azt az $n$ tényezõs szorzatot jelenti, amelynek minden tényezõje $a$. Ha $n = 1$, akkor $a^1 = a$. Az $a$ számot a hatvány ==alap==jának, az $n$ számot a hatvány ==kitevõ==jének nevezzük, ez utóbbi megmutatja, hogy a hatványalapot hányszor kell szorzótényezõül venni. 
 A hatványozás azonosságai pozitív egész kitevõ esetén:  ($a, b \in\mathbb{R},\; m, n \in\mathbb{N}^+$) 
 
 ---
