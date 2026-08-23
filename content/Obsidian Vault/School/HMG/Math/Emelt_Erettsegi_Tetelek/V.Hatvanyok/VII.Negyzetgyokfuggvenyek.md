@@ -1,4 +1,4 @@
-**DEFINÍCIÓ:** Az $f: \mathbb{R}_0^+ \to \mathbb{R}, f(x) = \sqrt{x}$ függvényeket négyzetgyökfüggvényeknek nevezzük.
+**DEFINÍCIÓ:** Az $f: \mathbb{R}_0^+ \to \mathbb{R}, f(x) = \sqrt{x}$ függvényeket ==négyzetgyökfüggvényeknek== nevezzük.
 
 ### Jellemzés:
 

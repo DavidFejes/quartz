@@ -1,9 +1,9 @@
-**DEFINÍCIÓ:** Másodfokú egyismeretlenes egyenlet $ax^2 + bx + c = 0$ alakra hozható, ahol $a, b, c \in\mathbb{R}$, $a \neq 0$. 
+**DEFINÍCIÓ:** ==Másodfokú egyismeretlenes egyenlet== $ax^2 + bx + c = 0$ alakra hozható, ahol $a, b, c \in\mathbb{R}$, $a \neq 0$. 
 Megoldása lehetséges a megoldóképlettel, szorzattá alakítással, teljes négyzetté alakítással, Viète-formulával. Pl. $x^2 + 3x = 0$ vagy $x^2 + 6x + 9 = 0$
 
 ---
 **TÉTEL:** Az $ax^2 + bx + c = 0$ $(a \neq 0)$ egyenlet **megoldóképlete:** $x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ , ahol 
-&emsp;&emsp;$b^2 - 4ac \ge 0$.
+$b^2 - 4ac \ge 0$.
 
 **BIZONYÍTÁS:**
 
@@ -35,15 +35,15 @@ x_{1,2} &= \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
 ---
-**DEFINÍCIÓ:** Az $ax^2 + bx + c = 0$ $(a \neq 0)$ **másodfokú egyenlet diszkriminánsa** $D = b^2 - 4ac$.
+**DEFINÍCIÓ:** Az $ax^2 + bx + c = 0$ $(a \neq 0)$ másodfokú egyenlet ==diszkrimináns==a $D = b^2 - 4ac$.
 
-*   Ha $D > 0$, akkor az egyenletnek két különböző valós gyöke van: $x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ .
-*   Ha $D = 0$, akkor az egyenletnek két egymással egyenlő gyöke, vagyis 1 valódi gyöke van:
-    &emsp;&emsp;$x = -\frac{b}{2a}$ , ezt kétszeres gyöknek is nevezzük, mert $x_1 = x_2$.
-*   Ha $D < 0$, akkor az egyenletnek nincs valós gyöke.
+*   Ha $D > 0$, akkor az egyenletnek **két különböző** valós gyöke van: $x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$ .
+*   Ha $D = 0$, akkor az egyenletnek **két egymással egyenlő** gyöke, vagyis 1 valódi gyöke van:
+    $x = -\frac{b}{2a}$ , ezt kétszeres gyöknek is nevezzük, mert $x_1 = x_2$.
+*   Ha $D < 0$, akkor az egyenletnek **nincs** valós gyöke.
 
 ---
-**TÉTEL:** A másodfokú egyenlet **gyöktényezős alak**ja:
+**TÉTEL:** A másodfokú egyenlet ==gyöktényezős alakja==:
 Ha egy $ax^2 + bx + c = 0$ $(a \neq 0)$ egyenlet megoldható (azaz $D \ge 0$) és két gyöke van $x_1$ és $x_2$, akkor az $ax^2 + bx + c = a(x - x_1)(x - x_2)$ minden valós $x$-re igaz.
 
 **TÉTEL: Viète-formulák:** másodfokú egyenlet gyökei és együtthatói közti összefüggések:

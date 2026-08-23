@@ -1,4 +1,4 @@
-**DEFINÍCIÓ**: Az $f: \mathbb{R} \rightarrow \mathbb{R}, f(x) = x^n$ függvényt, ahol $n \in\mathbb{N}^+$, hatványfüggvénynek nevezzük. A hatványfüggvények értelmezhetõek $n = 0$ esetre is, de ettõl most eltekintünk. A hatványfüggvény vizsgálatát két részre kell bontanunk aszerint, hogy $n$ páros-e vagy páratlan. 
+**DEFINÍCIÓ**: Az $f: \mathbb{R} \rightarrow \mathbb{R}, f(x) = x^n$ függvényt, ahol $n \in\mathbb{N}^+$, ==hatványfüggvénynek== nevezzük. A hatványfüggvények értelmezhetõek $n = 0$ esetre is, de ettõl most eltekintünk. A hatványfüggvény vizsgálatát két részre kell bontanunk aszerint, hogy $n$ páros-e vagy páratlan. 
 
 ### Jellemzés:
 
