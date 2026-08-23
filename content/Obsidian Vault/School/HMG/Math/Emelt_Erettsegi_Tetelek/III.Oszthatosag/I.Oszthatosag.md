@@ -1,6 +1,6 @@
 Az oszthatóság fogalmánál alaphalmaznak az egész számok halmazát tekintjük. Két egész szám hányadosa nem mindig egész szám, az ==oszthatóságnál azt vizsgáljuk, hogy egész számok osztásakor mikor lesz a hányados is egész szám==, vagyis a maradék $0$. 
 	
-**DEFINÍCIÓ**: Egy $a$ egész szám ==osztó==ja egy $b$ egész számnak, ha található olyan *c* egész szám, amelyre $a \cdot c = b$. Jelölés: $a|b$. (Természetesen $c|b$ is igaz). Ebben az esetben az is igaz, hogy $b$ osztható $a$-val és $c$-vel. Ekkor azt is mondhatjuk, hogy $b$ többszöröse $a$-nak. A $0$ szerepe a számelméletben: 
+**DEFINÍCIÓ**: Egy $a$ egész szám osztója egy $b$ egész számnak, ha található olyan *c* egész szám, amelyre $a \cdot c = b$. Jelölés: $a|b$. (Természetesen $c|b$ is igaz). Ebben az esetben az is igaz, hogy $b$ osztható $a$-val és $c$-vel. Ekkor azt is mondhatjuk, hogy $b$ ==többszörös==e $a$-nak. A $0$ szerepe a számelméletben: 
 	• a $0$ minden nemnulla egész számnak többszöröse ($0$-szorosa), azaz $0$ minden nemnulla egész számmal osztható ugyanis $0 = 0 \cdot a;\; a|0$, ha $a \neq 0$. Ez azt is jelenti, hogy a $0$ páros szám. A $0$-nak egyetlen többszöröse van a 0, viszont a $0$ bármely egész számnak a többszöröse. 
 	• a $0$ nem osztója egyetlen nemnulla egész számnak sem, ugyanis ha $0$ osztója lenne egy b nem nulla egész számnak, akkor létezne egy olyan c egész szám, amikre $b = c \cdot 0 = 0$ lenne, ami ellentmond azzal a feltétellel, hogy $b \neq 0$. Oszthatósági tételek: Ha $a, b, c \in\mathbb{Z}$, akkor 
 
@@ -29,7 +29,7 @@ Az oszthatóság fogalmánál alaphalmaznak az egész számok halmazát tekintj�
 **BIZONYÍTÁS**: Az $a|b$ feltétel azt jelenti, hogy hogy van olyan $d$ egész szám, hogy $b = a \cdot d$. Az $a|c$ feltétel azt jelenti, hogy van olyan $e$ egész szám, hogy $c = a \cdot e$. Ekkor $b \pm c \implies (a \cdot d) \pm (a \cdot e) = a \cdot (d \pm e)$ a disztributivitás miatt. A $(d \pm e)$ egész szám, tehát találtunk megfelelõ egész számot, így $a|b$ és $a|c$ $\implies a|b \pm c$. Az oszthatóságot eddig az egész számokra értelmeztük, a továbbiakban leszûkítjük a természetes számokra, azaz a nemnegatív egész számokra. Egy adott problémánál tudjuk majd automatikusan alkalmazni az itt megfogalmazottakat az egész számokra. 
 
 ---
-**TÉTEL**: Ha $a, b \in\mathbb{Z}^+$, és aΩb valamint $b|a \implies a = b$, azaz ha két pozitív egész szám egymásnak 
+**TÉTEL**: Ha $a, b \in\mathbb{Z}^+$, és $a|b$ valamint $b|a \implies a = b$, azaz ha két pozitív egész szám egymásnak 
 osztója, akkor a két szám egyenlõ. 
 **BIZONYÍTÁS**: Az $a|b$ feltétel azt jelenti, hogy van olyan $d$ egész szám, amire $b = a \cdot d$, a $b|a$ fel tétel azt jelenti, hogy hogy van olyan $e$ egész szám, amire $a = b \cdot e$. Ekkor $b = a \cdot d = (b \cdot e) \cdot d = b \cdot (d \cdot e)$ a szorzás asszociativitása miatt. Osztva $b$-vel az egyenlet mindkét oldalát: $1 = b \cdot e$, aminek a pozitív egész számok halmazán csak a $d = e = 1$ a megoldása. Ekkor viszont $a = b \cdot 1 = b$.
 
