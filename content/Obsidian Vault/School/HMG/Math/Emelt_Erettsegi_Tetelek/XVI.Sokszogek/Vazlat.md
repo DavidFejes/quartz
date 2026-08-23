@@ -1,5 +1,5 @@
 Vázlat: 
-I. Konvex sokszögek tulajdonságai
-II. Szabályos sokszögek 
-III. Gráfok
-IV. Alkalmazások, matematikatörténeti vonatkozások
+I. [[I.Konvex|Konvex sokszögek]] tulajdonságai
+II. [[II.Szabalyos|Szabályos sokszögek]] 
+III. [[III.Grafok|Gráfok]]
+IV. [[IV.Alkalmazasok|Alkalmazások]], matematikatörténeti vonatkozások
