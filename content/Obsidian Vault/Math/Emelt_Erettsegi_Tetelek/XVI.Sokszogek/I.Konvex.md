@@ -5,7 +5,7 @@
 
 **BIZONYÍTÁS:** Az $n$ oldalú, vagyis $n$ csúcsú konvex sokszög minden csúcsából $n - 3$ darab átló húzható (nem húzható átló a két szomszédos csúcsba és saját magába). Így $n$ csúcsból $n\cdot (n-3)$ átló húzható. Ekkor viszont minden átlót kétszer számoltunk, mert figyelembe vettük a kezdõpontjánál és a végpontjánál is. Ezért az összes átló száma $\frac{n\cdot (n-3)}{2}$
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819140633.png" />
+  <img src="Pasted image 20260819140633.png" />
 </p>
 
 ---
@@ -13,7 +13,7 @@
 
 **BIZONYÍTÁS:** A konvex sokszög egy csúcsából $n - 3$ átló húzható (nem húzható átló a két szom szédos csúcsba és saját magába). Ez az $n - 3$ darab átló $n - 2$ darab háromszögre bontja a sokszöget. Egy háromszög belsõ szögeinek összege $180º$, így az $n - 2$ darab háromszög belsõ szögeinek összege $(n - 2) \cdot 180º$, ami éppen a sokszög belsõ szögeinek összegét adja.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819140932.png" />
+  <img src="Pasted image 20260819140932.png" />
 </p>
 
 ---

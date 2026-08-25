@@ -12,19 +12,19 @@
 
 **Páros $n$ esetén ezek elkülönülnek:** a tengelyek fele, azaz $\frac{n}{2}$ darab tengely a szemköztes oldalak oldalfelező merőlegese; a tengelyek másik fele, azaz $\frac{n}{2}$ darab tengely a szemközti csúcsok szögfelező egyenese.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819141510.png" />
+  <img src="Pasted image 20260819141510.png" />
 </p>
 
 ---
 **Páratlan $n$ esetén** bármely szimmetriatengely az egyik oldal oldalfelezõ merõlegese és a szemköztes szög szögfelezõje is egyben.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819141549.png" />
+  <img src="Pasted image 20260819141549.png" />
 </p>
 
 ---
 A szimmetriatengelyek egy pontban metszik egymást, szabályos sokszögek esetében ez a pont a sokszög köré írható és a sokszögbe írható kör középpontja is. Mindezekbõl következik, hogy a ==szabályos sokszögek húrsokszögek és érintõsokszögek is== egyben. A körök középpontjából a szabályos $n$ szög $n$ darab egyenlõ szárú háromszögre bontható, amelynek alapja a sokszög oldala, szára a sokszög köré írható kör sugara, alaphoz tartozó magassága a sokszögbe írható kör sugara.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819141653.png" />
+  <img src="Pasted image 20260819141653.png" />
 </p>
 
 ---
@@ -38,5 +38,5 @@ A szimmetriatengelyek egy pontban metszik egymást, szabályos sokszögek eseté
 
 **TÉTEL:** Egy $n$ oldalú szabályos sokszög ==területe==: $T = \frac{r \cdot K}{2}$, ahol $r$ a sokszögbe írt kör sugara, $K$ a kerülete, ebből $T = \frac{r \cdot n \cdot a}{2}$, ahol $r$ a sokszögbe írt kör sugara, $a$ pedig az oldalhossza.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819141915.png" />
+  <img src="Pasted image 20260819141915.png" />
 </p>

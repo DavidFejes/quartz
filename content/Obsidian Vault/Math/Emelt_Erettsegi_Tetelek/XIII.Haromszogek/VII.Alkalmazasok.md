@@ -1,3 +1,4 @@
+
 • Háromszögszerkesztési feladatok 
 • Koordináta-geometria: 3 ponton átmenõ kör egyenlete, háromszög súlypontjának kiszámítása 
 • Súlyvonal, súlypont (homogén anyageloszlású háromszög esetén) fizikában: súlyvonal mentén, illetve súlypontban alátámasztva a háromszög egyensúlyban van 

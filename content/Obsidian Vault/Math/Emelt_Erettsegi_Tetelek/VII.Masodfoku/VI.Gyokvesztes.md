@@ -1,6 +1,7 @@
 Gyökvesztés következhet be, ==ha a változót tartalmazó kifejezéssel osztjuk az egyenlet mindkét oldalát==, vagy olyan átalakítást végzünk, amely szűkíti az értelmezési tartományt.
 
 ---
+
 $$
 \begin{array}{l@{\qquad\qquad}l}
 \textbf{Pl. hibás megoldás:} & \textbf{helyes megoldás:} \\[8pt]
@@ -20,7 +21,9 @@ x^2 + 2x + 1 = 0 &\Leftrightarrow x = -1
 \end{aligned}
 \end{array}
 $$
+
 ---
+
 $$
 \begin{array}{l@{\qquad\qquad}l}
 \textbf{Pl. hibás megoldás:} & \textbf{helyes megoldás:} \\[8pt]

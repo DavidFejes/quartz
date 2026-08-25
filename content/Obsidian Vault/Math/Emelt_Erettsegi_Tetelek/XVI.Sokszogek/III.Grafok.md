@@ -10,13 +10,13 @@ A gráfok nagyon jól szemléltetik egy halmaz elemei közti kapcsolatokat. Grá
 
 **DEFINÍCIÓ:** Egy gráfot ==egyszerû gráf==nak nevezünk, ha nincs benne sem hurokél, sem többszörös él.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819142147.png" />
+  <img src="Pasted image 20260819142147.png" />
 </p>
 **DEFINÍCIÓ:** Egy gráf egy pontjához illeszkedõ élvégek számát a pont ==fokszám==ának (fokának) nevezzük.
 
 **TÉTEL:** A legalább $2$ csúcsú egyszerû gráfban van $2$ azonos fokú csúcs.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819142301.png" />
+  <img src="Pasted image 20260819142301.png" />
 </p>
 **TÉTEL:** A pontok ==fokszámösszege az élek számának kétszerese==. 
 
@@ -26,7 +26,7 @@ A gráfok nagyon jól szemléltetik egy halmaz elemei közti kapcsolatokat. Grá
 
 **DEFINÍCIÓ:** Egy gráf ==összefüggõ gráf==, ha bármely pontjából bármely másik pontjába élek mentén el lehet jutni.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819143436.png" />
+  <img src="Pasted image 20260819143436.png" />
 </p>
 **DEFINÍCIÓ:** Ha egy gráfnak $n$ pontja van ($n \in\mathbb{Z}^+$) és mindegyik pontból pontosan egy él vezet a többi ponthoz, akkor a gráfot $n$ pontú ==teljes gráf==nak nevezzük. 
 
@@ -34,15 +34,15 @@ A gráfok nagyon jól szemléltetik egy halmaz elemei közti kapcsolatokat. Grá
 
 **TÉTEL:** $n$ pontú teljes gráfban a ==fokszámok összege==: $n \cdot (n - 1)$.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819143714.png" />
+  <img src="Pasted image 20260819143714.png" />
 </p>
 **DEFINÍCIÓ:** Az ==út== az élek olyan egymáshoz kapcsolódó sora, amely egyetlen ponton sem halad át egynél többször.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819143852.png" />
+  <img src="Pasted image 20260819143852.png" />
 </p>
 **DEFINÍCIÓ:** A ==vonal== a gráf csúcsainak és éleinek az a sora, amelyben az élek ezeket a pontokat kötik össze és az élek nem ismétlõdnek, **egy csúcs többször is elõfordulhat**. A vonal ==zárt, ha kezdõ és végpontja megegyezik, egyébként nyílt==.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819143934.png" />
+  <img src="Pasted image 20260819143934.png" />
 </p>
 **DEFINÍCIÓ:** A ==kör== olyan vonal, amelynek **kezdõ és végpontja megegyezi**k és a **pontok nem ismétlõdnek**. 
 
@@ -50,15 +50,15 @@ A gráfok nagyon jól szemléltetik egy halmaz elemei közti kapcsolatokat. Grá
 
 **TÉTEL:** ==Zárt== Euler vonala akkor és csak akkor van egy összefüggõ gráfnak, ha ==minden foka páros==.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819144041.png" />
+  <img src="Pasted image 20260819144041.png" />
 </p>
 **TÉTEL:** ==Nyílt== Euler vonala akkor és csak akkor van egy összefüggõ gráfnak, ha ==pontosan két páratlan fokú== pontja van.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819144305.png" />
+  <img src="Pasted image 20260819144305.png" />
 </p>
 **DEFINÍCIÓ:** Két gráfot ==izomorf==nak nevezünk, ha pontjaik és éleik kölcsönösen egyértelmûen és illeszkedéstartóan megfeleltethetõek egymásnak.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819144342.png" />
+  <img src="Pasted image 20260819144342.png" />
 </p>
 **DEFINÍCIÓ:** A ==fagráf== olyan összefüggõ gráf, amely **nem tartalmaz kört**. 
 
@@ -70,6 +70,6 @@ A gráfok nagyon jól szemléltetik egy halmaz elemei közti kapcsolatokat. Grá
 
 **TÉTEL:** Az $n$ csúcsú fagráfnak $n - 1$ éle van.
 <p align="center">
-  <img src="School/HMG/Math/Emelt_Erettsegi_Tetelek/XVI.Sokszogek/Abrak/Pasted image 20260819144444.png" />
+  <img src="Pasted image 20260819144444.png" />
 </p>
 **TÉTEL:** Minden egynél több csúcsú fagráfnak van legalább 2 elsõfokú csúcsa.

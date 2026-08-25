@@ -14,4 +14,5 @@
 |        **paritása:**        |                                                  páros: $f(-x) = f(x)$                                                  |                                    páratlan, vagyis $g(-x) = -g(x)$                                     |
 |      **korlátosság:**       |                                        alulról korlátos, felülről nem korlátos.                                         |                                              nem korlátos                                               |
 |    **invertálhatóság:**     | invertálható, ha $x \ge 0$: inverze az<br>$f^{-1}: \mathbb{R}^+_0 \to \mathbb{R}, f^{-1}(x) = \sqrt[2k]{x}$<br>függvény | invertálható: inverze az<br>$g^{-1}: \mathbb{R} \to \mathbb{R}, g^{-1}(x) = \sqrt[2k+1]{x}$<br>függvény |
+
 Görbület szempontjából külön kell venni az $n = 1$ esetet: ekkor a függvény se nem konvex, se nem konkáv. A hatványfüggvények folytonosak, minden pontban deriválhatóak, minden korlátos intervallumon integrálhatóak.
