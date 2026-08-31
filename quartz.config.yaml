@@ -214,7 +214,6 @@ plugins:
     layout:
       position: left
       priority: 30
-      group: toolbar
 
   - source: "@quartz-community/explorer"
     enabled: true
