@@ -12,4 +12,4 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
-search-local/
+search-local/node_modules/
