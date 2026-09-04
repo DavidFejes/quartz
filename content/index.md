@@ -8,9 +8,10 @@ Use as you wish! :)
 
 ## Mathematics
 
-- [[HMG/Math/Emelt_Erettsegi_Tetelek]]
-- [[HMG/Math/Emelt_Erettsegi_Tetelek/Tudnivalok]]
+- [[Obsidian_Vault/Math]]
+- [[Obsidian_Vault/Math/Emelt_Erettsegi_Tetelek/Tudnivalok]]
 
 ## Other
 
-- [[HMG/Math/Symbols]]
+- [[Obsidian_Vault/Physics]]
+- [[Obsidian_Vault/Literatura]]
