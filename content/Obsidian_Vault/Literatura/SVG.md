@@ -1,0 +1,6 @@
+[[Kolcsey_Katona.svg]]
+[[Romantika.svg]]
+[[Csokonai_Berzsenyi.svg]]
+[[Felvilagosodas.svg]]
+[[Reformacio.svg]]
+[[Barokk.svg]]
