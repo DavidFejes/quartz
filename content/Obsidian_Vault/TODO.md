@@ -7,6 +7,6 @@
 - [x] 24
 - [x] kölcsönösen egyértelmû megfeleltetés létesíthetõ
 - [x] Setup Quartz
-- [ ] Quartz .left
-- [ ] Quartz .search
+- [x] Quartz .left
+- [x] Quartz .search
 - [ ] 
