@@ -9,6 +9,7 @@
 <p align="center">
   <img src="Harmoszog_Kore_Irt_Kor_Kozeppontja.png" />
 </p>
+
 $K$ hegyesszögû háromszög esetén a háromszögön belül, derékszögû háromszögnél az átfogó felezõpontjába (Thalész tétele), tompaszögû háromszögnél a háromszögön kívül esik.
 <p align="center">
   <img src="Thalesz.png" />
