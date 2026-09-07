@@ -25,4 +25,51 @@
 >[!quote]
 >this is a quote
 
+>[!info]
+>this is an info
+
+>[!abstract]
+>this is an abstract
+
+>[!important]
+>this is important
+
+>[!note]
+>this is a note
+
+>[!danger]
+>this is danger
+
+>[!stuff]
+>this is stuff that should be yellow
+
+~~~yaml
+configuration:
+  pageTitle: "My Site"
+  # ... general configuration
+plugins:
+  - source: github:quartz-community/some-plugin
+    enabled: true
+    # ... plugin entries
+~~~
+
+~~~javascript
+configuration:
+  pageTitle: "My Site"
+  # ... general configuration
+plugins:
+  - source: github:quartz-community/some-plugin
+    enabled: true
+    # ... plugin entries
+~~~
+
+~~~bash
+configuration:
+  pageTitle: "My Site"
+  # ... general configuration
+plugins:
+  - source: github:quartz-community/some-plugin
+    enabled: true
+    # ... plugin entries
+~~~
 
