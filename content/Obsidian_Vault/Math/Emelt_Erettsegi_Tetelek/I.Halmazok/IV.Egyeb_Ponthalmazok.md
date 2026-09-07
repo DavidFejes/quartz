@@ -21,6 +21,7 @@
 <p align="center">
   <img src="Pasted image 20260817130237.png" />
 </p>
+
 ---
 **TÉTEL**: Három adott ponttól egyenlõ távolságra lévõ pontok halmaza a ==térben egy olyan egyenes, amely áthalad a három pont, mint háromszög köré írható kör középpontján==, és merõleges a 3 pont síkjára (ha a 3 pont nem esik egy egyenesbe), vagy üres halmaz (ha a 3 pont egy egyenesbe esik). 
 

@@ -6,7 +6,7 @@ A feleletben feltétlenül szerepelniük kell az alábbi részleteknek:
 	• a kitûzött feladat megoldása; 
 	• a téma matematikán belüli vagy azon kívüli alkalmazása, illetve matematikatörténeti vonat kozása (több ismertetése vagy egy részletesebb bemutatása)
 
- Ha a tételhez tartozó kitûzött feladat bizonyítást igényel, akkor ennek a megoldása nem helyettesíti a témakörhöz tartozó tétel kimondását és bizonyítását. Használható segédeszközök: a tételcímekkel együtt nyilvánosságra hozott képlettár (a vizsgabizott ság biztosítja), szöveges adatok tárolására és megjelenítésére nem alkalmas zsebszámológép, körzõ, vonalzóés szögmérõ. 
+ Ha a tételhez tartozó kitûzött feladat bizonyítást igényel, akkor ennek a megoldása nem helyettesíti a témakörhöz tartozó tétel kimondását és bizonyítását. Használható segédeszközök: a tételcímekkel együtt nyilvánosságra hozott képlettár (a vizsgabizottság biztosítja), szöveges adatok tárolására és megjelenítésére nem alkalmas zsebszámológép, körzõ, vonalzóés szögmérõ. 
  
  A tétellapra rajzolni és írni nem szabad! 
  
