@@ -9,7 +9,7 @@
 </p>
 
 ---
-**TÉTEL:** Egy n oldalú konvex sokszög ==belsõ szögeinek összege== $(n-2)\cdot 180^\circ$ .
+**TÉTEL:** Egy $n$ oldalú konvex sokszög ==belsõ szögeinek összege== $(n-2)\cdot 180^\circ$ .
 
 **BIZONYÍTÁS:** A konvex sokszög egy csúcsából $n - 3$ átló húzható (nem húzható átló a két szom szédos csúcsba és saját magába). Ez az $n - 3$ darab átló $n - 2$ darab háromszögre bontja a sokszöget. Egy háromszög belsõ szögeinek összege $180º$, így az $n - 2$ darab háromszög belsõ szögeinek összege $(n - 2) \cdot 180º$, ami éppen a sokszög belsõ szögeinek összegét adja.
 <p align="center">

@@ -1,11 +1,12 @@
-
 • Háromszögszerkesztési feladatok 
 • Koordináta-geometria: 3 ponton átmenõ kör egyenlete, háromszög súlypontjának kiszámítása 
 • Súlyvonal, súlypont (homogén anyageloszlású háromszög esetén) fizikában: súlyvonal mentén, illetve súlypontban alátámasztva a háromszög egyensúlyban van 
 • Kör középpontjának szerkesztése 
-• Területszámítási feladatok a nevezetes körök sugarainak felhasználásával$$
+• Területszámítási feladatok a nevezetes körök sugarainak felhasználásával
+$$
 R=\frac{abc}{4t},\; r=\frac{t}{s},\quad ahol\; s=\frac{k}{2}$$
 ---
+
 ### Matematikatörténeti vonatkozások:
 • A geometria görög szó, eredeti jelentése földmérés. A geometria az ókori görög matematikusok tevékenysége által vált tudománnyá. Thalészen, a matematika atyján kívül a legnagyobb görög geométernek tartott Apollóniusz (Kr. e. III. századi görög matematikus) is sokat fog lalkozott a háromszögekkel és a velük kapcsolatos összefüggésekkel. A tételben szereplõ is meretek nagy részét már õk is tudták. 
 • Thalész a Kr. e. VI. században élt az ókori Görögországban, az elsõ olyan matematikus volt, akinek bizonyítási igénye volt, foglalkozott állításai megfordításával is: így jutott el a derékszögû háromszög köré írt kör középpontjához. 

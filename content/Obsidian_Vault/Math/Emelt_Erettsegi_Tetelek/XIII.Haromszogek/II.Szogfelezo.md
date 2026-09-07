@@ -5,7 +5,7 @@ Egy ==konvex szög szögfelezõje== a szög csúcsából kiinduló, a szögtarto
 **TÉTEL:** Egy konvex szögtartományban a száraktól egyenlõ távolságra lévõ pontok halmaza a szög felezõ. 
 
 ---
-**TÉTEL:** A háromszög három belsõ szögfelezõje egy pontban metszi egymást. Ez a pont a három szögbe írt kör középpontja. 
+**TÉTEL:** A háromszög három belsõ szögfelezõje egy pontban metszi egymást. Ez a pont a ==háromszögbe írt kör középpontja==. 
 **BIZONYÍTÁS:**
 <p align="center">
   <img src="Haromszogbe_Irt_Kor_Kozeppontja.png" />

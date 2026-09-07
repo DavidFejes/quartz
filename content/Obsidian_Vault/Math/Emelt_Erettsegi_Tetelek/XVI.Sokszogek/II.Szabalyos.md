@@ -29,7 +29,7 @@ A szimmetriatengelyek egy pontban metszik egymást, szabályos sokszögek eseté
 
 ---
 **Középpontos szimmetria:** a páros oldalszámú szabályos sokszögek középpontosan szimmetrikusak. A szimmetriaközéppont ==két szimmetriatengely metszéspontja==.
-í
+
 **Forgásszimmetria:** ==minden szabályos sokszög forgásszimmetrikus==. A forgatás középpontja a sokszög középpontja (a szimmetria tengelyek metszéspontja, páros oldalszám esetén a középpontos szimmetria középpontja is), a ==forgatás szöge== pedig lehet $k \cdot \frac{360^{\circ}}{n}$, ahol $k \in \mathbb{Z}$.
 
 **TÉTEL:** Egy $n$ oldalú szabályos sokszög ==területe==: $T = n \cdot \frac{R^2 \cdot \sin\left(\frac{360^{\circ}}{n}\right)}{2}$, ahol $R$ a sokszög köré írt kör sugara.
