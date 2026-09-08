@@ -29,5 +29,4 @@ Habár a legtöbb érzelmet egyszerű, sőt mindennapi módon szavakba öntjük,
 
 Így a kérdés, amely a nyelv alkalmasságát vizsgálja a gondolatok és érzések pontos kifejezésével kapcsolatban, nem válaszolható meg egyszerű igennel vagy nemmel.
 
->[!cite]
 
