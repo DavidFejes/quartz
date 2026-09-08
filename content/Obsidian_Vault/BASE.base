@@ -1,6 +1,3 @@
 views:
   - type: table
     name: Table
-    groupBy:
-      property: file.backlinks
-      direction: ASC
