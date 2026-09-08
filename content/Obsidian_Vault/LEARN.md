@@ -28,3 +28,6 @@ A nyelv mint kommunikáció több ezer éve fejlődik megállás nélkül. Ez eg
 Habár a legtöbb érzelmet egyszerű, sőt mindennapi módon szavakba öntjük, például azt mondjuk, hogy szomorúak vagy boldogok vagyunk, minél erősebbé válnak az érzéseink, ez annál nehezebbé válik. Például a szerelem vagy a gyász olyan erős érzelmek lehetnek, amelyeket néha még hosszú magyarázattal sem tudunk teljesen átadni egy másik embernek. Véleményem szerint ezek az erős érzelmek elhomályosíthatják az elme racionális gondolkodását és kifejezőképességét. Ilyenkor hiába állnak rendelkezésünkre a megfelelő szavak, nehéz lehet kiválasztani és megfelelően használni őket.
 
 Így a kérdés, amely a nyelv alkalmasságát vizsgálja a gondolatok és érzések pontos kifejezésével kapcsolatban, nem válaszolható meg egyszerű igennel vagy nemmel.
+
+>[!cite]
+
