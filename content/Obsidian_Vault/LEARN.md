@@ -6,6 +6,7 @@
 
 >[!failure]
 >Matek Tételek
+>1, 7, 13, 16
 
 >[!failure]
 >Irodalom TZ Petőfi
