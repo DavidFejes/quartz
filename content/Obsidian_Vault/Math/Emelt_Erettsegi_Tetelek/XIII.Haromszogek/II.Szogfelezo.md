@@ -24,4 +24,5 @@ A bizonyítás során kiderült, hogy $O$ egyenlő távol van a háromszög olda
 <p align="center">
   <img src="Pasted image 20260819121724.png" />
 </p>
+
 **TÉTEL:** A háromszög ugyanazon szögének külsõ és belsõ szögfelezõje merõleges egymásra.

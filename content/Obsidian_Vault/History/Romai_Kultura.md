@@ -2,19 +2,19 @@
 
 ## **Vallás:** 
 
-- Politeista, főistene Jupiter 
+- ==Politeista==, főistene ==Jupiter== 
 
-- Istenei emberszerűek, szerepköreik hasonlóak a görögökéhez 
+- Istenei ==emberszerűek==, szerepköreik hasonlóak a görögökéhez 
 
-- Az istentisztelet áldozat volt, melyet tisztségviselők mutattak be, de léteztek papi testületek is, pl.: Vesta-szüzek 
+- Az istentisztelet ==áldozat== volt, melyet tisztségviselők mutattak be, de léteztek papi testületek is, pl.: Vesta-szüzek 
 
-- Az áldozat célja az istenek jóindulatának elnyerése 
+- Az áldozat **célja** az istenek **jóindulatának elnyerése** 
 
 - Léteztek házi oltárok is 
 
-- Templomaik itt is lépcsősoron álltak, oszlopcsarnok, melyben az isten szentélye volt 
+- Templomaik itt is **lépcsősoron álltak**, **oszlopcsarnok**, melyben az isten szentélye volt 
 
-- Később megjelent a császárkultusz, a császáraikat istenként tisztelték 
+- Később megjelent a császárkultusz, a ==császáraikat istenként tisztelték== 
 
 ## **Városi élet:** 
 
