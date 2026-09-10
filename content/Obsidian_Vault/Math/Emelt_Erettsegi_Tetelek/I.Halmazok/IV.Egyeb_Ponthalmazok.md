@@ -9,7 +9,7 @@
 
 ---
 **TÉTEL:** A háromszög három ==oldalfelezõ merõlegese egy pontban metszi egymást==. 
-**BIZONYÍTÁS**: Tekintsük az ABC háromszög AB és BC oldalának oldalfelezõ merõlegesét. Ezek az egyenesek metszik egymást, mert a háromszög oldalai nem lehetnek párhuzamosak egymással. Jelöljük a két oldalfelezõ merõleges metszéspontját M-mel. Ekkor M pont egyenlõ távolságra van A és B csúcsoktól (mert M illeszkedik AB szakaszfelezõ merõlegesére), illetve B és C csúcsoktól (mert M illeszkedik BC szakaszfelezõ merõlegesére). Ebbõl következik, hogy M egyenlõ távolságra van A és C csúcsoktól, tehát M-n áthalad AC oldalfelezõ merõlegese. Tehát a három oldalfelezõ merõleges egy pontban metszi egymást.
+**BIZONYÍTÁS**: Tekintsük az $ABC$ háromszög $AB$ és $BC$ oldalának oldalfelezõ merõlegesét. Ezek az egyenesek metszik egymást, mert a háromszög oldalai nem lehetnek párhuzamosak egymással. Jelöljük a két oldalfelezõ merõleges metszéspontját $M$-mel. Ekkor $M$ pont egyenlõ távolságra van $A$ és $B$ csúcsoktól (mert M illeszkedik AB szakaszfelezõ merõlegesére), illetve $B$ és $C$ csúcsoktól (mert $M$ illeszkedik $BC$ szakaszfelezõ merõlegesére). Ebbõl következik, hogy $M$ egyenlõ távolságra van $A$ és $C$ csúcsoktól, tehát $M$-n áthalad $AC$ oldalfelezõ merõlegese. Tehát a három oldalfelezõ merõleges egy pontban metszi egymást.
 
 <p align="center">
   <img src="Pasted image 20260817125508.png" />

@@ -1,5 +1,5 @@
 
-**DEFINÍCIÓ**: Azt a halmazt, amelynek a vizsgált halmazok részhalmazai, ==alaphalmaz==nak vagy ==univerzum==nak nevezzük. Jele: U vagy H. 
+**DEFINÍCIÓ**: Azt a halmazt, amelynek a vizsgált halmazok részhalmazai, ==alaphalmaz==nak vagy ==univerzum==nak nevezzük. Jele: $U$ vagy $H$. 
 	
 **DEFINÍCIÓ:** Egy A halmaz [komplementer halmazának](Komplementer_Halmaz.png) az alaphalmaz azon elemeinek halmazát nevezzük, amelyek az A halmaznak nem elemei. Jele: $\overline{A}$. (Fontos tulajdonság: $\overline{\overline{A}} = A$.)
 	
@@ -9,9 +9,9 @@
 
 **DEFINÍCIÓ**: Két halmaz [diszjunkt](Diszjunkt.png), ha nincs közös elemük, vagyis a metszetük üres halmaz. $A \cap  B = \emptyset$. ^diszjunkt
 
-**DEFINÍCIÓ**: Az A és B halmaz [különbsége](Kulonbseg.png) az A halmaz mindazon elemeinek halmaza, amelyek a B halmaznak nem elemei. Jele: $A \setminus B$. 
+**DEFINÍCIÓ**: Az $A$ és $B$ halmaz [különbsége](Kulonbseg.png) az A halmaz mindazon elemeinek halmaza, amelyek a $B$ halmaznak nem elemei. Jele: $A \setminus B$. 
 	
-**DEFINÍCIÓ**: Az A és B halmaz [Descartes](Descartes.md)-féle szorzata az a halmaz, amelynek elemei az összes olyan rendezett (a; b) pár, amelynél  $a \in A \;és\; b \in B$. Jele: $A \times B$.
+**DEFINÍCIÓ**: Az $A$ és $B$ halmaz [Descartes](Descartes.md)-féle szorzata az a halmaz, amelynek elemei az összes olyan rendezett ($a; b$) pár, amelynél  $a \in A \;és\; b \in B$. Jele: $A \times B$.
 
 ### Halmazműveletek tulajdonságai
 
