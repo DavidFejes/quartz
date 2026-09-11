@@ -4,7 +4,7 @@
 >[!failure]
 >Fizika HF
 
->[!warning]
+>[!success]
 >Matek Tételek
 >1, 7, 13, 16
 

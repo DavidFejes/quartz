@@ -248,5 +248,3 @@ polgárok részvételét a közügyekben!
 összegekkel és közsegélyekkel [Periklész] megnyerte magának a népet.” (Plutarkhosz ókori
 történetíró)
 
-asd
-	asd
