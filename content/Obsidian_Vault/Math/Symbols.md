@@ -46,3 +46,32 @@ c &= d
 \underbrace{a\cdot a\cdot \ldots \cdot a}_{\text{m db}} -> $\underbrace{a\cdot a\cdot \ldots \cdot a}_{\text{m db}}$
 \overbrace{a \cdot a \cdot \dots \cdot a} -> $\overbrace{a \cdot a \cdot \dots \cdot a}$
 \left(\frac{a}{b}\right)^n  -> $\left(\frac{a}{b}\right)^n$
+
+> [!todo]
+
+>[!tip]
+
+>[!success]
+
+>[!question]
+
+>[!warning]
+
+>[!failure]
+
+>[!bug]
+
+>[!example]
+
+>[!quote]
+
+>[!info]
+
+>[!abstract]
+
+>[!important]
+
+>[!note]
+
+>[!danger]
+
