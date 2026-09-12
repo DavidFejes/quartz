@@ -27,7 +27,8 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   background-color: var(--light) !important;
-  overflow-x: hidden !important;
+  /* overflow-x: clip prevents horizontal scroll WITHOUT breaking position: sticky */
+  overflow-x: clip !important;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -55,7 +56,7 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 700;
   color: var(--dark);
   word-break: break-word !important;
-  overflow-wrap: anywhere !important;      /* Forces long words with underscores to wrap */
+  overflow-wrap: anywhere !important;
   white-space: normal !important;
   letter-spacing: -0.015em;
   max-width: 100% !important;
@@ -173,6 +174,7 @@ pre,
       p {
         margin: 0 !important;
         color: #888888 !important;
+        white-space: nowrap !important;
       }
     }
   }
@@ -255,86 +257,102 @@ pre,
 // 6. RESPONSIVE BREAKPOINTS (MOBILE VS DESKTOP)
 // -------------------------------------------------------------
 
-// MOBILE PORTRAIT SPECIFIC
+// MOBILE PORTRAIT SPECIFIC (STICKY HEADER + CLEAN SYMMETRY)
 @media all and ($mobile) {
   .page,
   #quartz-body {
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0 0.85rem 3rem 0.85rem !important; /* Identical 0.85rem space on left and right */
+    padding: 0 0.85rem 3rem 0.85rem !important;
     margin: 0 !important;
     box-sizing: border-box !important;
     height: auto;
-    overflow-x: hidden !important;
+    overflow: visible !important;
   }
 
-  // Sticky top header row
+  // Sticky top bar (Header icons on left, Search on right)
   .sidebar.left,
   .left {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
     background-color: var(--light) !important;
     width: 100% !important;
     max-width: 100% !important;
-    padding: 0.6rem 0 0.4rem 0 !important;
+    padding: 0.75rem 0 !important;
     margin: 0 0 0.75rem 0 !important;
     height: auto;
     box-sizing: border-box !important;
 
-    // Flex container that wraps items safely
     display: flex !important;
-    flex-flow: row wrap !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
     align-items: center !important;
     justify-content: space-between !important;
-    gap: 0.6rem !important;
+    gap: 0.5rem !important;
 
-    // The left icons group (hamburger menu + darkmode)
-    .toolbar,
+    // Hide the "Notes" site title on mobile for a clean header
     .page-title {
-      display: flex !important;
+      display: none !important;
+    }
+
+    // Left toolbar with hamburger & dark mode button
+    .toolbar,
+    .darkmode {
+      display: inline-flex !important;
       align-items: center !important;
       gap: 0.5rem !important;
-      flex: 0 0 auto !important;
-      margin: 0 !important;
+      order: 1 !important;
     }
 
-    // Search bar occupies only the remaining space on the first row
-    .search {
-      flex: 1 1 0 !important;
-      min-width: 0 !important;
-      width: auto !important;
-      max-width: 100% !important;
-      margin: 0 !important;
-    }
-
-    // Force explorer to drop onto its own row beneath search/icons
+    // Clean transparent hamburger menu button
     .explorer {
-      flex: 0 0 100% !important;
-      width: 100% !important;
-      max-width: 100% !important;
-      order: 10 !important;
+      order: 1 !important;
+      width: auto !important;
+
+      button#explorer,
+      .explorer-title {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 4px !important;
+        color: var(--dark) !important;
+        cursor: pointer !important;
+        margin: 0 !important;
+        font-size: 1.1rem !important;
+      }
+
+      // Drawer/dropdown when explorer is opened on mobile
+      .explorer-content {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--light) !important;
+        padding: 1rem 0.5rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
     }
 
-    button#explorer,
-    .explorer-title {
-      display: flex !important;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      background: #202020;
-      border: 1px solid #333;
-      border-radius: 6px;
-      padding: 8px 12px;
-      color: #c2c0c0;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      cursor: pointer;
+    // Search bar on the top right
+    .search {
+      order: 2 !important;
+      flex: 0 1 180px !important;
+      min-width: 130px !important;
+      max-width: 220px !important;
+      margin: 0 0 0 auto !important;
+
+      .search-button {
+        width: 100% !important;
+        height: 36px !important;
+        padding: 6px 12px !important;
+      }
     }
   }
 
-  // Note content body & callout containers
+  // Center note content
   .center {
     width: 100% !important;
     max-width: 100% !important;
@@ -342,7 +360,7 @@ pre,
     margin: 0 !important;
     box-sizing: border-box !important;
     height: auto;
-    overflow-x: hidden !important;
+    overflow: visible !important;
 
     article {
       width: 100% !important;
@@ -352,7 +370,6 @@ pre,
       box-sizing: border-box !important;
     }
 
-    // Ensure callouts do not burst past the right side
     .callout {
       width: 100% !important;
       max-width: 100% !important;
