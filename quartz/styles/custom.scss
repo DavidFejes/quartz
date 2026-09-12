@@ -95,6 +95,8 @@ h1.article-title {
 // 3. MATH & CODE OVERFLOW FIXES
 // -------------------------------------------------------------
 .katex-display {
+  width: 100%;
+  margin: 0.75em 0 !important;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 0.5rem 0;
@@ -244,30 +246,33 @@ pre,
 // 6. RESPONSIVE BREAKPOINTS (MOBILE VS DESKTOP)
 // -------------------------------------------------------------
 
-// MOBILE PORTRAIT SPECIFIC
+// MOBILE PORTRAIT SPECIFIC (PERFECT SYMMETRY ON BOTH SIDES)
 @media all and ($mobile) {
   .page {
-    width: 100%;
-    max-width: 100%;
-    /* Tight padding closer to the screen edges */
-    padding: 0 0.5rem 3rem 0.5rem;
-    box-sizing: border-box;
+    width: 100% !important;
+    max-width: 100% !important;
+    /* Perfectly balanced 12px (0.75rem) padding on both left and right edges */
+    padding: 0 0.75rem 3rem 0.75rem !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
     height: auto;
     overflow: visible;
   }
 
-  // Sticky top bar so search & icons stay pinned while scrolling
+  // Sticky top bar (flush with the same boundaries)
   .sidebar.left,
   .left {
     position: sticky;
     top: 0;
     z-index: 100;
     background-color: var(--light) !important;
-    width: 100%;
-    padding: 0.6rem 0 0.4rem 0;
-    margin-bottom: 0.5rem;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.6rem 0 0.4rem 0 !important;
+    margin: 0 0 0.5rem 0 !important;
     height: auto;
     overflow: visible;
+    box-sizing: border-box !important;
 
     button#explorer,
     .explorer-title {
@@ -287,21 +292,34 @@ pre,
     }
   }
 
+  // Note content body (symmetric 100% full width)
   .center {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
     height: auto;
     overflow: visible;
+
+    article {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      box-sizing: border-box !important;
+    }
   }
 
   .sidebar.right,
   .right {
-    width: 100%;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
     height: auto;
     overflow: visible;
-    padding: 1rem 0;
-    margin-top: 2rem;
+    padding: 1rem 0 !important;
+    margin-top: 2rem !important;
     border-top: 1px solid #282828;
   }
 }
