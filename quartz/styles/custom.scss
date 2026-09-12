@@ -56,8 +56,8 @@ h1, h2, h3, h4, h5, h6,
 h1.article-title {
   font-size: clamp(1.6rem, 5vw, 2.2rem);
   line-height: 1.25;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 // Reading body text
@@ -122,7 +122,6 @@ pre,
     }
   }
 
-  // Hide reader-mode only (keep darkmode visible)
   .reader-mode,
   .readermode {
     display: none !important;
@@ -130,13 +129,14 @@ pre,
 
   .darkmode {
     display: inline-flex;
+    align-items: center;
     cursor: pointer;
   }
 
   // Search input styling
   .search {
     width: 100% !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 0.5rem !important;
 
     .search-button {
       width: 100% !important;
@@ -249,26 +249,25 @@ pre,
   .page {
     width: 100%;
     max-width: 100%;
-    padding: 0 1rem 3rem 1rem;
+    /* Tight padding closer to the screen edges */
+    padding: 0 0.5rem 3rem 0.5rem;
     box-sizing: border-box;
     height: auto;
     overflow: visible;
   }
 
-  .center,
-  .sidebar.left,
-  .sidebar.right,
-  .left,
-  .right {
-    width: 100%;
-    height: auto;
-    overflow: visible;
-  }
-
+  // Sticky top bar so search & icons stay pinned while scrolling
   .sidebar.left,
   .left {
-    padding: 0.75rem 0 0 0;
-    margin-bottom: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--light) !important;
+    width: 100%;
+    padding: 0.6rem 0 0.4rem 0;
+    margin-bottom: 0.5rem;
+    height: auto;
+    overflow: visible;
 
     button#explorer,
     .explorer-title {
@@ -288,8 +287,19 @@ pre,
     }
   }
 
+  .center {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: auto;
+    overflow: visible;
+  }
+
   .sidebar.right,
   .right {
+    width: 100%;
+    height: auto;
+    overflow: visible;
     padding: 1rem 0;
     margin-top: 2rem;
     border-top: 1px solid #282828;
