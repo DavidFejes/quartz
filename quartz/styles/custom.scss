@@ -1,9 +1,12 @@
 @use "./variables.scss" as *;
 
 // -------------------------------------------------------------
-// 0. GLOBAL INVISIBLE SCROLLBARS (SAFE FOR LIGHTNINGCSS)
+// 0. GLOBAL BOX-SIZING & INVISIBLE SCROLLBARS
 // -------------------------------------------------------------
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
   scrollbar-width: none !important;        /* Firefox */
   -ms-overflow-style: none !important;     /* IE / Edge */
 }
@@ -16,10 +19,21 @@
 }
 
 // -------------------------------------------------------------
-// 1. GLOBAL BASE & OBSIDIAN DARK THEME
+// 1. GLOBAL BASE & OBSIDIAN THEME
 // -------------------------------------------------------------
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--light) !important;
+  overflow-x: hidden !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body,
 .page,
+#quartz-body,
 .left,
 .center,
 .right,
@@ -29,12 +43,6 @@ body,
 .folder-outer,
 .folder-container {
   background: transparent !important;
-}
-
-html, body {
-  background-color: var(--light) !important;
-  overflow-x: hidden;
-  -webkit-tap-highlight-color: transparent;
 }
 
 // -------------------------------------------------------------
@@ -47,9 +55,10 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 700;
   color: var(--dark);
   word-break: break-word !important;
-  overflow-wrap: anywhere !important;
+  overflow-wrap: anywhere !important;      /* Forces long words with underscores to wrap */
   white-space: normal !important;
   letter-spacing: -0.015em;
+  max-width: 100% !important;
 }
 
 // Responsive note title
@@ -66,6 +75,8 @@ h1.article-title {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--darkgray);
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
 }
 
 // Content Links
@@ -92,10 +103,11 @@ h1.article-title {
 }
 
 // -------------------------------------------------------------
-// 3. MATH, CALLOUTS & CODE OVERFLOW FIXES
+// 3. MATH, CALLOUTS & OVERFLOW GUARDS
 // -------------------------------------------------------------
 .katex-display {
-  width: 100%;
+  width: 100% !important;
+  max-width: 100% !important;
   margin: 0.75em 0 !important;
   overflow-x: auto;
   overflow-y: hidden;
@@ -105,14 +117,14 @@ h1.article-title {
 
 pre, 
 .table-container {
-  max-width: 100%;
+  max-width: 100% !important;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   border-radius: 6px;
 }
 
 // -------------------------------------------------------------
-// 4. LEFT SIDEBAR, DARKMODE & SEARCH BAR
+// 4. LEFT SIDEBAR, DARKMODE & SEARCH BAR (BASE)
 // -------------------------------------------------------------
 .sidebar.left,
 .left {
@@ -135,7 +147,6 @@ pre,
     cursor: pointer;
   }
 
-  // Search button base styling
   .search {
     .search-button {
       width: 100% !important;
@@ -173,6 +184,7 @@ pre,
 .explorer {
   font-family: var(--bodyFont);
   font-size: 0.9rem;
+  max-width: 100% !important;
 
   .explorer-content {
     background: transparent !important;
@@ -243,12 +255,13 @@ pre,
 // 6. RESPONSIVE BREAKPOINTS (MOBILE VS DESKTOP)
 // -------------------------------------------------------------
 
-// MOBILE PORTRAIT SPECIFIC (NO HORIZONTAL OVERFLOW / PROPORTIONAL FIT)
+// MOBILE PORTRAIT SPECIFIC
 @media all and ($mobile) {
-  .page {
+  .page,
+  #quartz-body {
     width: 100% !important;
-    max-width: 100vw !important;
-    padding: 0 0.75rem 3rem 0.75rem !important;
+    max-width: 100% !important;
+    padding: 0 0.85rem 3rem 0.85rem !important; /* Identical 0.85rem space on left and right */
     margin: 0 !important;
     box-sizing: border-box !important;
     height: auto;
@@ -269,28 +282,38 @@ pre,
     height: auto;
     box-sizing: border-box !important;
 
-    // Flex layout for top row
+    // Flex container that wraps items safely
     display: flex !important;
-    flex-direction: row !important;
+    flex-flow: row wrap !important;
     align-items: center !important;
     justify-content: space-between !important;
-    gap: 0.75rem !important;
+    gap: 0.6rem !important;
 
-    // Icons on the left
-    > div, 
+    // The left icons group (hamburger menu + darkmode)
     .toolbar,
     .page-title {
-      flex-shrink: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 0.5rem !important;
+      flex: 0 0 auto !important;
       margin: 0 !important;
     }
 
-    // Search fills ONLY remaining space without overflowing
+    // Search bar occupies only the remaining space on the first row
     .search {
-      flex: 1 1 auto !important;
-      width: auto !important;
+      flex: 1 1 0 !important;
       min-width: 0 !important;
+      width: auto !important;
       max-width: 100% !important;
       margin: 0 !important;
+    }
+
+    // Force explorer to drop onto its own row beneath search/icons
+    .explorer {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      order: 10 !important;
     }
 
     button#explorer,
@@ -319,6 +342,7 @@ pre,
     margin: 0 !important;
     box-sizing: border-box !important;
     height: auto;
+    overflow-x: hidden !important;
 
     article {
       width: 100% !important;
@@ -328,7 +352,7 @@ pre,
       box-sizing: border-box !important;
     }
 
-    // Keep Callouts contained within the screen
+    // Ensure callouts do not burst past the right side
     .callout {
       width: 100% !important;
       max-width: 100% !important;
@@ -339,8 +363,15 @@ pre,
 
     ul, ol {
       box-sizing: border-box !important;
-      padding-left: 1.4rem !important;
+      padding-left: 1.25rem !important;
+      padding-right: 0 !important;
       margin-right: 0 !important;
+      max-width: 100% !important;
+
+      li {
+        overflow-wrap: break-word !important;
+        word-break: break-word !important;
+      }
     }
   }
 
