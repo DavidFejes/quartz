@@ -2,9 +2,6 @@
 >Irodalom vázlat  - Kiskunság
 
 >[!failure]
->Fizika HF
-
->[!failure]
 >Irodalom TZ Petőfi
 
 >[!failure]
