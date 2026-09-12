@@ -1,6 +1,25 @@
 @use "./variables.scss" as *;
 
 // -------------------------------------------------------------
+// 0. GLOBAL INVISIBLE SCROLLBARS (EVERYWHERE)
+// -------------------------------------------------------------
+*,
+*::before,
+*::after,
+html,
+body {
+  scrollbar-width: none !important;        /* Firefox */
+  -ms-overflow-style: none !important;     /* IE / Edge legacy */
+
+  &::-webkit-scrollbar {
+    display: none !important;              /* Chrome, Safari, WebKit */
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+  }
+}
+
+// -------------------------------------------------------------
 // 1. GLOBAL BASE & OBSIDIAN DARK THEME
 // -------------------------------------------------------------
 body,
@@ -18,7 +37,6 @@ body,
 
 html, body {
   background-color: var(--light) !important;
-  /* Prevent accidental horizontal page bouncing on iOS/Android */
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
 }
@@ -38,7 +56,7 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: -0.015em;
 }
 
-// Responsive note title using clamp (adapts cleanly from small phones to desktop)
+// Responsive note title
 h1.article-title {
   font-size: clamp(1.6rem, 5vw, 2.2rem);
   line-height: 1.25;
@@ -79,9 +97,8 @@ h1.article-title {
 }
 
 // -------------------------------------------------------------
-// 3. MOBILE MATH & CODE OVERFLOW FIXES
+// 3. MATH & CODE OVERFLOW FIXES
 // -------------------------------------------------------------
-// Prevents math equations (KaTeX) from blowing out phone width
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
@@ -89,7 +106,6 @@ h1.article-title {
   -webkit-overflow-scrolling: touch;
 }
 
-// Code blocks & tables scroll horizontally inside the note
 pre, 
 .table-container {
   max-width: 100%;
@@ -101,7 +117,8 @@ pre,
 // -------------------------------------------------------------
 // 4. LEFT SIDEBAR & SEARCH BAR
 // -------------------------------------------------------------
-.sidebar.left {
+.sidebar.left,
+.left {
   .page-title {
     font-size: 1.35rem;
     margin-bottom: 0.75rem;
@@ -110,7 +127,7 @@ pre,
     }
   }
 
-  .darkmode,
+
   .reader-mode,
   .readermode {
     display: none !important;
@@ -152,7 +169,7 @@ pre,
 }
 
 // -------------------------------------------------------------
-// 5. EXPLORER (FLAT, NO VERTICAL LINES, TOUCH-FRIENDLY)
+// 5. EXPLORER
 // -------------------------------------------------------------
 .explorer {
   font-family: var(--bodyFont);
@@ -184,7 +201,6 @@ pre,
           display: flex;
           align-items: flex-start;
           gap: 8px;
-          // Touch-friendly target padding
           padding: 6px 8px;
           border-radius: 5px;
           color: #a0a0a0;
@@ -228,27 +244,32 @@ pre,
 // 6. RESPONSIVE BREAKPOINTS (MOBILE VS DESKTOP)
 // -------------------------------------------------------------
 
-// MOBILE PORTRAIT SPECIFIC (Phones / Small screens)
+// MOBILE PORTRAIT SPECIFIC
 @media all and ($mobile) {
   .page {
     width: 100%;
     max-width: 100%;
     padding: 0 1rem 3rem 1rem;
     box-sizing: border-box;
+    height: auto;
+    overflow: visible;
   }
 
-  .center {
+  .center,
+  .sidebar.left,
+  .sidebar.right,
+  .left,
+  .right {
     width: 100%;
-    padding: 0;
+    height: auto;
+    overflow: visible;
   }
 
-  .sidebar.left {
-    width: 100%;
+  .sidebar.left,
+  .left {
     padding: 0.75rem 0 0 0;
     margin-bottom: 1rem;
 
-    // Show the Explorer collapse toggle button on mobile so the 
-    // note remains immediately visible without scrolling past 50 files
     button#explorer,
     .explorer-title {
       display: flex !important;
@@ -267,26 +288,42 @@ pre,
     }
   }
 
-  // Right sidebar (TOC / Backlinks) stays unobtrusive at the bottom
-  .sidebar.right {
-    width: 100%;
+  .sidebar.right,
+  .right {
     padding: 1rem 0;
     margin-top: 2rem;
     border-top: 1px solid #282828;
   }
 }
 
-// DESKTOP SPECIFIC
+// DESKTOP SPECIFIC (INDEPENDENT 3-COLUMN SCROLLING)
 @media all and not ($mobile) {
-  .page {
-    max-width: 92vw;
+  html, body {
+    height: 100vh;
+    overflow: hidden;
   }
 
-  .sidebar.left {
+  .page {
+    max-width: 92vw;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  // Left column independent scroll
+  .sidebar.left,
+  .left {
     width: 290px;
     max-width: 340px;
     padding: 1rem 0.8rem 1rem 1.2rem;
     flex-shrink: 0;
+    height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    box-sizing: border-box;
 
     button#explorer,
     .explorer-title {
@@ -294,33 +331,30 @@ pre,
     }
   }
 
-  .sidebar.right {
-    width: 260px;
-    max-width: 300px;
-    flex-shrink: 0;
-  }
-
+  // Center column independent scroll
   .center {
+    flex: 1;
     max-width: unset;
-  }
-}
-
- // Independent center scrolling (desktop only)
-  .page {
-    height: 100vh;
-    overflow: hidden;
-  }
-
-  .center {
+    height: 100%;
+    max-height: 100vh;
     min-height: 0;
     overflow-y: auto;
     overscroll-behavior: contain;
-
-    // Hide scrollbar, but keep scrolling enabled
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    padding: 1rem 2rem;
+    box-sizing: border-box;
   }
+
+  // Right column independent scroll
+  .sidebar.right,
+  .right {
+    width: 260px;
+    max-width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 1rem 1.2rem 1rem 0.8rem;
+    box-sizing: border-box;
+  }
+}
