@@ -1,22 +1,18 @@
 @use "./variables.scss" as *;
 
 // -------------------------------------------------------------
-// 0. GLOBAL INVISIBLE SCROLLBARS (EVERYWHERE)
+// 0. GLOBAL INVISIBLE SCROLLBARS (SAFE FOR LIGHTNINGCSS)
 // -------------------------------------------------------------
-*,
-*::before,
-*::after,
-html,
-body {
+* {
   scrollbar-width: none !important;        /* Firefox */
-  -ms-overflow-style: none !important;     /* IE / Edge legacy */
+  -ms-overflow-style: none !important;     /* IE / Edge */
+}
 
-  &::-webkit-scrollbar {
-    display: none !important;              /* Chrome, Safari, WebKit */
-    width: 0 !important;
-    height: 0 !important;
-    background: transparent !important;
-  }
+*::-webkit-scrollbar {
+  display: none !important;                /* Chrome, Safari, WebKit */
+  width: 0 !important;
+  height: 0 !important;
+  background: transparent !important;
 }
 
 // -------------------------------------------------------------
@@ -64,7 +60,7 @@ h1.article-title {
   margin-bottom: 1rem;
 }
 
-// Comfortable reading body text
+// Reading body text
 .center article, 
 .center .popover-hint {
   font-size: 1rem;
@@ -72,7 +68,7 @@ h1.article-title {
   color: var(--darkgray);
 }
 
-// Content Links (Obsidian Purple)
+// Content Links
 .center {
   a.internal, 
   a.external {
@@ -87,7 +83,6 @@ h1.article-title {
     }
   }
 
-  // Obsidian Highlight Marker
   mark {
     background-color: var(--textHighlight);
     color: inherit;
@@ -115,7 +110,7 @@ pre,
 }
 
 // -------------------------------------------------------------
-// 4. LEFT SIDEBAR & SEARCH BAR
+// 4. LEFT SIDEBAR, DARKMODE & SEARCH BAR
 // -------------------------------------------------------------
 .sidebar.left,
 .left {
@@ -127,10 +122,15 @@ pre,
     }
   }
 
-
+  // Hide reader-mode only (keep darkmode visible)
   .reader-mode,
   .readermode {
     display: none !important;
+  }
+
+  .darkmode {
+    display: inline-flex;
+    cursor: pointer;
   }
 
   // Search input styling
@@ -297,7 +297,7 @@ pre,
 }
 
 // DESKTOP SPECIFIC (INDEPENDENT 3-COLUMN SCROLLING)
-@media all and not ($mobile) {
+@media not ($mobile) {
   html, body {
     height: 100vh;
     overflow: hidden;
