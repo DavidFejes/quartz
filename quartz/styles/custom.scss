@@ -1,98 +1,81 @@
 @use "./variables.scss" as *;
 
 // -------------------------------------------------------------
-// 0. GLOBAL BOX-SIZING & INVISIBLE SCROLLBARS
+// 1. GLOBAL BASE, THEMES & INVISIBLE SCROLLBARS
 // -------------------------------------------------------------
-*,
-*::before,
-*::after {
-  box-sizing: border-box !important;
-  scrollbar-width: none !important;        /* Firefox */
-  -ms-overflow-style: none !important;     /* IE / Edge */
+*, *::before, *::after {
+  box-sizing: border-box;
+  scrollbar-width: none !important;
 }
 
 *::-webkit-scrollbar {
-  display: none !important;                /* Chrome, Safari, WebKit */
-  width: 0 !important;
-  height: 0 !important;
-  background: transparent !important;
+  display: none !important;
 }
 
-// -------------------------------------------------------------
-// 1. GLOBAL BASE & OBSIDIAN THEME
-// -------------------------------------------------------------
 html, body {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background-color: var(--light) !important;
-  /* overflow-x: clip prevents horizontal scroll WITHOUT breaking position: sticky */
-  overflow-x: clip !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip; /* Keeps sticky working without horizontal spill */
   -webkit-tap-highlight-color: transparent;
 }
 
-body,
-.page,
-#quartz-body,
-.left,
-.center,
-.right,
-.sidebar,
-.explorer,
-.explorer-content,
-.folder-outer,
-.folder-container {
-  background: transparent !important;
+// DARK MODE: Keep clean dark obsidian theme
+:root[saved-theme="dark"],
+html[saved-theme="dark"] {
+  html, body { background-color: var(--light) !important; }
+  body, .page, #quartz-body, .left, .center, .right, .sidebar {
+    background: transparent !important;
+  }
+  .explorer .explorer-content {
+    background-color: #181a1b !important;
+    border-bottom: 1px solid #333;
+  }
+}
+
+// LIGHT MODE: SOLID BACKGROUNDS ONLY (NO SEE-THROUGH)
+:root[saved-theme="light"],
+html[saved-theme="light"],
+:root:not([saved-theme="dark"]) {
+  html, body, .page, #quartz-body, .left, .center, .right, .sidebar {
+    background-color: var(--light) !important;
+  }
+  .explorer .explorer-content {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid var(--lightgray) !important;
+  }
 }
 
 // -------------------------------------------------------------
-// 2. TYPOGRAPHY & RESPONSIVE HEADINGS
+// 2. TYPOGRAPHY & LINKS
 // -------------------------------------------------------------
-h1, h2, h3, h4, h5, h6,
-.article-title,
-.page-title {
+h1, h2, h3, h4, h5, h6, .article-title, .page-title {
   font-family: var(--headerFont);
   font-weight: 700;
   color: var(--dark);
-  word-break: break-word !important;
-  overflow-wrap: anywhere !important;
-  white-space: normal !important;
+  overflow-wrap: anywhere;
   letter-spacing: -0.015em;
-  max-width: 100% !important;
 }
 
-// Responsive note title
 h1.article-title {
   font-size: clamp(1.6rem, 5vw, 2.2rem);
   line-height: 1.25;
-  margin-top: 0.25rem;
-  margin-bottom: 0.75rem;
+  margin: 0.25rem 0 0.75rem 0;
 }
 
-// Reading body text
-.center article, 
-.center .popover-hint {
+.center {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--darkgray);
-  max-width: 100% !important;
-  overflow-wrap: break-word !important;
-}
+  overflow-wrap: break-word;
 
-// Content Links
-.center {
-  a.internal, 
-  a.external {
+  a.internal, a.external {
     color: var(--secondary);
     text-decoration: underline;
     text-decoration-color: rgba(157, 139, 245, 0.4);
     text-underline-offset: 3px;
-    background: transparent !important;
-
-    &:hover {
-      color: var(--tertiary);
-    }
+    &:hover { color: var(--tertiary); }
   }
 
   mark {
@@ -103,113 +86,50 @@ h1.article-title {
   }
 }
 
-// -------------------------------------------------------------
-// 3. MATH, CALLOUTS & OVERFLOW GUARDS
-// -------------------------------------------------------------
-.katex-display {
-  width: 100% !important;
-  max-width: 100% !important;
-  margin: 0.75em 0 !important;
+.katex-display, pre, .table-container {
+  max-width: 100%;
   overflow-x: auto;
-  overflow-y: hidden;
-  padding: 0.5rem 0;
   -webkit-overflow-scrolling: touch;
 }
 
-pre, 
-.table-container {
-  max-width: 100% !important;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  border-radius: 6px;
-}
-
 // -------------------------------------------------------------
-// 4. LEFT SIDEBAR, DARKMODE & SEARCH BAR (BASE)
+// 3. SEARCH & EXPLORER BASE
 // -------------------------------------------------------------
-.sidebar.left,
-.left {
-  .page-title {
-    font-size: 1.35rem;
-    margin-bottom: 0.75rem;
-    a {
-      color: var(--dark);
-    }
-  }
+.sidebar.left {
+  .page-title { font-size: 1.35rem; margin-bottom: 0.75rem; a { color: var(--dark); } }
+  .reader-mode, .readermode { display: none !important; }
+  .darkmode { display: inline-flex; align-items: center; cursor: pointer; }
 
-  .reader-mode,
-  .readermode {
-    display: none !important;
-  }
-
-  .darkmode {
-    display: inline-flex;
+  .search .search-button {
+    width: 100%;
+    height: 38px;
+    background: #242424;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: flex;
     align-items: center;
+    gap: 8px;
+    color: #888;
     cursor: pointer;
-  }
-
-  .search {
-    .search-button {
-      width: 100% !important;
-      background: #242424 !important;
-      border: 1px solid #333333 !important;
-      border-radius: 6px !important;
-      padding: 8px 12px !important;
-      display: flex !important;
-      align-items: center !important;
-      gap: 8px !important;
-      color: #888888 !important;
-      font-size: 0.9rem !important;
-      cursor: pointer !important;
-      height: 38px !important;
-      box-sizing: border-box !important;
-
-      svg {
-        stroke: #888888 !important;
-        width: 15px !important;
-        height: 15px !important;
-        flex-shrink: 0 !important;
-      }
-
-      p {
-        margin: 0 !important;
-        color: #888888 !important;
-        white-space: nowrap !important;
-      }
-    }
+    svg { stroke: #888; width: 15px; height: 15px; flex-shrink: 0; }
+    p { margin: 0; color: #888; white-space: nowrap; font-size: 0.9rem; }
   }
 }
 
-// -------------------------------------------------------------
-// 5. EXPLORER
-// -------------------------------------------------------------
 .explorer {
   font-family: var(--bodyFont);
   font-size: 0.9rem;
-  max-width: 100% !important;
 
   .explorer-content {
-    background: transparent !important;
     overflow-x: hidden;
-
-    ul, li, div {
-      border: none !important;
-      border-left: none !important;
-
-      &::before,
-      &::after {
-        display: none !important;
-      }
-    }
-
+    ul, li, div { border: none !important; &::before, &::after { display: none !important; } }
     ul {
       list-style: none;
       padding-left: 0.6rem;
       margin: 0;
-
       li {
         margin: 2px 0;
-
         a, button {
           display: flex;
           align-items: flex-start;
@@ -220,254 +140,136 @@ pre,
           text-decoration: none;
           line-height: 1.35;
           width: 100%;
-          white-space: normal !important;
-          word-break: break-word !important;
-          overflow-wrap: anywhere !important;
-
-          &:hover, &:active {
-            color: var(--dark);
-            background-color: rgba(255, 255, 255, 0.05) !important;
-          }
+          overflow-wrap: anywhere;
+          &:hover { color: var(--dark); background-color: rgba(255, 255, 255, 0.05); }
         }
-
-        a.active {
-          color: var(--secondary) !important;
-          font-weight: 600;
-          background: transparent !important;
-        }
-
-        .folder-title {
-          font-weight: 600;
-          color: #5C4B8A;
-          word-break: break-word !important;
-          overflow-wrap: anywhere !important;
-        }
-
-        .folder-icon, svg {
-          flex-shrink: 0;
-          margin-top: 3px;
-          opacity: 0.6;
-        }
+        a.active { color: var(--secondary) !important; font-weight: 600; }
+        .folder-title { font-weight: 600; color: #5C4B8A; }
       }
     }
   }
 }
 
 // -------------------------------------------------------------
-// 6. RESPONSIVE BREAKPOINTS (MOBILE VS DESKTOP)
+// 4. MOBILE LAYOUT (EDGE-TO-EDGE EXPLORER & SWAPPED BUTTONS)
 // -------------------------------------------------------------
-
-// MOBILE PORTRAIT SPECIFIC (STICKY HEADER + CLEAN SYMMETRY)
 @media all and ($mobile) {
-  .page,
-  #quartz-body {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 0.85rem 3rem 0.85rem !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    height: auto;
-    overflow: visible !important;
+  .page {
+    width: 100%;
+    padding: 0 0.85rem 3rem 0.85rem;
   }
 
-  // Sticky top bar (Header icons on left, Search on right)
-  .sidebar.left,
-  .left {
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 999 !important;
+  .sidebar.left {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background-color: var(--light) !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0.75rem 0 !important;
-    margin: 0 0 0.75rem 0 !important;
-    height: auto;
-    box-sizing: border-box !important;
+    padding: 0.6rem 0;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.6rem;
 
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    gap: 0.5rem !important;
+    .page-title { display: none !important; }
 
-    // Hide the "Notes" site title on mobile for a clean header
-    .page-title {
-      display: none !important;
+    // 1st: Explorer Menu Button (Far Left)
+    .explorer,
+    button#explorer,
+    .explorer-title {
+      order: 1 !important;
+      display: flex !important;
+      background: transparent !important;
+      border: none !important;
+      padding: 4px;
+      color: var(--dark);
+      cursor: pointer;
     }
 
-    // Left toolbar with hamburger & dark mode button
+    // 2nd: Dark Mode Toggle (Next to Explorer)
     .toolbar,
     .darkmode {
-      display: inline-flex !important;
-      align-items: center !important;
-      gap: 0.5rem !important;
-      order: 1 !important;
-    }
-
-    // Clean transparent hamburger menu button
-    .explorer {
-      order: 1 !important;
-      width: auto !important;
-
-      button#explorer,
-      .explorer-title {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        background: transparent !important;
-        border: none !important;
-        padding: 4px !important;
-        color: var(--dark) !important;
-        cursor: pointer !important;
-        margin: 0 !important;
-        font-size: 1.1rem !important;
-      }
-
-      // Drawer/dropdown when explorer is opened on mobile
-      .explorer-content {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--light) !important;
-        padding: 1rem 0.5rem;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-      }
-    }
-
-    // Search bar on the top right
-    .search {
       order: 2 !important;
-      flex: 0 1 180px !important;
-      min-width: 130px !important;
-      max-width: 220px !important;
-      margin: 0 0 0 auto !important;
+      display: inline-flex !important;
+      align-items: center;
+    }
 
-      .search-button {
-        width: 100% !important;
-        height: 36px !important;
-        padding: 6px 12px !important;
-      }
+    // 3rd: Search Bar (Pushed to Right Edge)
+    .search {
+      order: 3 !important;
+      flex: 0 1 180px;
+      min-width: 130px;
+      margin-left: auto; /* Pushes search to far right */
+      .search-button { height: 36px; padding: 6px 12px; }
+    }
+
+    // Full Edge-to-Edge Dropdown covering left-to-right screen
+    .explorer .explorer-content {
+      position: absolute !important;
+      top: 100% !important;
+      left: -0.85rem !important;                 /* Extends flush to screen left edge */
+      right: -0.85rem !important;                /* Extends flush to screen right edge */
+      width: calc(100% + 1.7rem) !important;     /* 100% edge-to-edge width */
+      padding: 1rem 0.85rem 1.5rem 0.85rem !important;
+      max-height: 80vh !important;
+      overflow-y: auto !important;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25) !important;
+      border-radius: 0 0 10px 10px !important;
     }
   }
 
-  // Center note content
   .center {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    height: auto;
-    overflow: visible !important;
-
-    article {
-      width: 100% !important;
-      max-width: 100% !important;
-      padding: 0 !important;
-      margin: 0 !important;
-      box-sizing: border-box !important;
-    }
-
-    .callout {
-      width: 100% !important;
-      max-width: 100% !important;
-      box-sizing: border-box !important;
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-    }
-
-    ul, ol {
-      box-sizing: border-box !important;
-      padding-left: 1.25rem !important;
-      padding-right: 0 !important;
-      margin-right: 0 !important;
-      max-width: 100% !important;
-
-      li {
-        overflow-wrap: break-word !important;
-        word-break: break-word !important;
-      }
-    }
+    width: 100%;
+    padding: 0;
+    article, .callout { width: 100%; max-width: 100%; }
   }
 
-  .sidebar.right,
-  .right {
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-    height: auto;
-    padding: 1rem 0 !important;
-    margin-top: 2rem !important;
+  .sidebar.right {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem;
     border-top: 1px solid #282828;
   }
 }
 
-// DESKTOP SPECIFIC (INDEPENDENT 3-COLUMN SCROLLING)
+// -------------------------------------------------------------
+// 5. DESKTOP LAYOUT (INDEPENDENT 3-COLUMN SCROLL)
+// -------------------------------------------------------------
 @media not ($mobile) {
-  html, body {
-    height: 100vh;
-    overflow: hidden;
-  }
+  html, body { height: 100vh; overflow: hidden; }
 
   .page {
     max-width: 92vw;
     height: 100vh;
-    max-height: 100vh;
-    overflow: hidden;
     display: flex;
-    box-sizing: border-box;
+    overflow: hidden;
   }
 
-  // Left column independent scroll
-  .sidebar.left,
-  .left {
+  .sidebar.left, .center, .sidebar.right {
+    height: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .sidebar.left {
     width: 290px;
     max-width: 340px;
     padding: 1rem 0.8rem 1rem 1.2rem;
     flex-shrink: 0;
-    height: 100%;
-    max-height: 100vh;
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    box-sizing: border-box;
-
-    .search {
-      width: 100% !important;
-      margin-bottom: 1rem !important;
-    }
-
-    button#explorer,
-    .explorer-title {
-      display: none !important;
-    }
+    .search { margin-bottom: 1rem; }
+    button#explorer, .explorer-title { display: none !important; }
   }
 
-  // Center column independent scroll
   .center {
     flex: 1;
-    max-width: unset;
-    height: 100%;
-    max-height: 100vh;
-    min-height: 0;
-    overflow-y: auto;
-    overscroll-behavior: contain;
     padding: 1rem 2rem;
-    box-sizing: border-box;
   }
 
-  // Right column independent scroll
-  .sidebar.right,
-  .right {
+  .sidebar.right {
     width: 260px;
     max-width: 300px;
-    flex-shrink: 0;
-    height: 100%;
-    max-height: 100vh;
-    overflow-y: auto;
-    overscroll-behavior: contain;
     padding: 1rem 1.2rem 1rem 0.8rem;
-    box-sizing: border-box;
+    flex-shrink: 0;
   }
 }
