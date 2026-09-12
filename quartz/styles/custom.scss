@@ -289,10 +289,16 @@ pre,
 
   .center {
     width: 100%;
-    padding: 0 0 0 1.5rem !important;
+    padding: 0;
     margin-inline: 0 !important;
     height: auto;
     overflow: visible;
+  }
+
+  .quartz-body {
+    padding-inline: 1.5rem !important;
+    margin-inline: 0 !important;
+    box-sizing: border-box;
   }
 
   .sidebar.right,
