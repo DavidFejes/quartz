@@ -1,98 +1,182 @@
----
-tags:
-  - történelem
-  - középkor
-  - gazdaság
-aliases:
-  - Középkori gazdaság
----
----
 # Középkori gazdaság
-
-> [!abstract] Összefoglaló
-> A középkori gazdaság alapját a **mezőgazdaság** képezte, amelyet a technológiai fejlődés és az új művelési módok alakítottak át. A korszak iparára a **céhes rendszer**, távolsági kereskedelmére pedig a **Levantei** és a **Hanza** útvonalak dominanciája volt jellemző.
-
----
 
 ## 1. Mezőgazdaság
 
-* **Fő feladata:** A létfenntartáshoz szükséges élelem biztosítása.
+### Művelési módok
 
-### 🚜 Technikai és technológiai újítások
-A termelés hatékonyságának növekedését eredményezték:
-* Szügyhám
-* Patkó
-* Nehézeke (fordítóeke)
-* Trágyázás
+- **Legelőváltó gazdálkodás**
+    
+    - A földet **6–8 évig**, kimerülésig művelték.
+        
+    - Ezután újabb parcellát törtek fel.
+        
+    - A felhagyott területen állatokat legeltettek.
+        
+- **Kétnyomásos gazdálkodás**
+    
+    - A földesúr birtokát két részre osztották.
+        
+    - Az egyik felét beművelték, a másik **ugar** volt, vagyis üresen maradt és pihent.
+        
+- **Háromnyomásos gazdálkodás**
+    
+    - A földterület **2/3 része** állt művelés alatt.
+        
+    - A föld **1/3-a ugar**, **1/3-ába tavaszi gabonát**, **1/3-ába őszi gabonát** vetettek.
+        
+    - A népesség növekedése tette szükségessé a művelt terület növelését.
+        
 
----
+### A mezőgazdaság fejlődését segítő technikák
 
-### 🌱 Földművelési módok fejlődése
+- **Szügyhám**
+    
+- **Patkó**
+    
+- **Nehézeke**
+    
+- **Trágyázás**
+    
 
-1. **Legelőváltó gazdálkodás:**
-   * A földet 6–8 évig (kimerülésig) művelték.
-   * Kimerülés után új parcellát törtek fel, a felhagyott területen pedig állatokat legeltettek.
+→ Ezek növelték a termelés hatékonyságát.
 
-2. **Kétnyomásos gazdálkodás:**
-   * A művelhető területet **két részre** osztották:
-     * 1/2 rész: bevetett terület (művelés alatt)
-     * 1/2 rész: **ugar** (pihentetett föld)
+### A földesúri uradalom részei
 
-3. **Háromnyomásos gazdálkodás:**
-   * *Oka:* A népességnövekedés miatt nagyobb bevetett területre volt szükség.
-   * A terület 2/3-a állt művelés alatt:
-     * 1/3 rész: **őszi gabona**
-     * 1/3 rész: **tavaszi gabona**
-     * 1/3 rész: **ugar** (pihentetett föld)
+- **Vár, udvarház**
+    
+    - Itt élt a földesúr és családja.
+        
+- **Falu**
+    
+    - Itt éltek a jobbágyok.
+        
+    - Házuk, kertjük és eszközeik saját tulajdonban voltak.
+        
+- **Jobbágytelek**
+    
+    - A földesúr tulajdona, de a jobbágyok használták.
+        
+    - A használatért cserébe járadékokkal tartoztak:
+        
+        - termény → **kilenced**
+            
+        - munka → **robot**
+            
+        - **ajándék**
+            
+- **Majorság (allódium)**
+    
+    - A földesúr saját kezelésű birtoka.
+        
+    - A jobbágyok robottal művelték.
+        
+    - Az itt termelt gabona egésze a földesurat illette.
+        
+- **Legelő, erdő, vizek**
+    
+    - A földesúr és jobbágyai közös használatában voltak.
+        
 
----
+### Jobbágyi szolgáltatások
 
-### 🏰 A földesúri uradalom felépítése
-
-| Rész megnevezése        | Jellemzők / Tulajdonviszonyok                                                                     |
-| :---------------------- | :------------------------------------------------------------------------------------------------ |
-| **Vár / Udvarház**      | A földesúr és családjának lakóhelye.                                                              |
-| **Falu**                | A jobbágyok lakóhelye (a házuk, kertjük és eszközeik *saját tulajdonban* voltak).                 |
-| **Jobbágytelek**        | A földesúr tulajdona, de a jobbágyok használják; a használatért **járadékokkal** tartoznak.       |
-| **Majorság (allódium)** | A földesúr saját kezelésű birtoka. A jobbágyok művelik meg robottal; a teljes termés a földesúré. |
-| **Közös területek**     | Erdők, legelők, vizek – a földesúr és a jobbágyok *közös használatában* álltak.                   |
-
-#### Jobbágyi szolgáltatások (járadékok)
-* **Terményjáradék:** **Kilenced** (a termés kilencedik tizede a földesúrnak).
-* **Munkajáradék:** **Robot** (általában heti 1 nap igás vagy 2 nap kézi robot).
-* **Ajándék:** Természetbeni hozzájárulás a földesúri konyhára (tej, tojás, sajt, csirke stb.).
+|Szolgáltatás|Megnevezés|Lényege|
+|---|---|---|
+|Terményjáradék|**Kilenced**|Termény beszolgáltatása|
+|Munkajáradék|**Robot**|Általában heti 1 nap igás vagy 2 nap kézi robot|
+|Ajándék|**Ajándék**|A földesúri konyhára juttatott élelmiszer, pl. tej, tojás, sajt, csirke|
 
 ---
 
 ## 2. Ipar
 
-### 🔨 A Céh
-> [!info] Fogalom
-> A középkori ipar szervezeti kerete; azonos mesterséget űző kézművesek érdekvédelmi szervezete.
+### Céh
 
-* **Hierarchia:**
-  $$\text{Inas} \longrightarrow \text{Segéd} \longrightarrow \text{Mester}$$
-* **Főbb funkciói és szabályai:**
-  * Szabályozták a **munkaidőt**, valamint a termékek **minőségét és mennyiségét**.
-  * Korlátozták a versenyt és a **túltermelést**.
-  * Védték jogaikat a **kontárokkal** (céhen kívüli iparosokkal) szemben.
-* **Védelmi szerep:** Támadás esetén a városfal meghatározott részét vagy bástyáját védték.
+A **céh** a középkori ipar szervezeti kerete volt.
+
+- Élén a **mester** állt.
+    
+- A mester munkáját **segédek és inasok** támogatták.
+    
+- Szabályozták:
+    
+    - a munkaidőt,
+        
+    - a termékek minőségét,
+        
+    - a termékek mennyiségét.
+        
+- Korlátozták a **túltermelést**.
+    
+- Védték jogaikat a **kontárokkal**, vagyis a céhen kívüli iparosokkal szemben.
+    
+- Támadás esetén a városfal meghatározott részét védték.
+    
 
 ---
 
 ## 3. Kereskedelem
 
-* **Szállítás:** Az épített útvonalak hiánya miatt a távolsági kereskedelem főleg **vízen** zajlott.
+- Az épített útvonalak hiánya miatt a kereskedelem főleg **vízen** zajlott.
+    
+- Két jelentős távolsági kereskedelmi útvonal alakult ki:
+    
+    - **Levantei kereskedelem**
+        
+    - **Hanza-kereskedelem**
+        
 
-### ⛵ Távolsági kereskedelmi útvonalak
+### Levantei kereskedelem
 
-| Szempont | Levantei útvonal | Hanza útvonal |
-| :--- | :--- | :--- |
-| **Terület** | Földközi-tenger | Észak-Európa, Baltikum |
-| **Fő központok** | Velence, Genova | Hamburg, Bréma |
-| **Termékek** | Luxuscikkek (selyem, porcelán, fűszerek) | Nyersanyagok, élelmiszerek (gabona, fa, méz, bor) |
-| **Vásárlók** | Uralkodó réteg | Főleg polgárok |
-| **Kapcsolódó utak** | Karavánutak (Selyemút, Tömjénút) | Európai folyami útvonalak |
+- A **Földközi-tengeren** zajlott.
+    
+- Központjai:
+    
+    - **Velence**
+        
+    - **Genova**
+        
+- Főbb termékei:
+    
+    - selyem,
+        
+    - porcelán,
+        
+    - fűszerek.
+        
+- A **karavánutak**, például a Selyem- és Tömjénút kapcsolódtak hozzá.
+    
+- Fő vásárlói az **uralkodó réteg** voltak.
+    
 
-> [!tip] Kapcsolat
-> A két nagy útvonal között az **Alpok hágóin át** összekötő szárazföldi utak is haladtak.
+### Hanza-kereskedelem
+
+- Nevét a **Hanza szövetségről** kapta.
+    
+- Területe:
+    
+    - **Észak-Európa**
+        
+    - **Baltikum**
+        
+- Központjai:
+    
+    - **Hamburg**
+        
+    - **Bréma**
+        
+- Főbb termékei:
+    
+    - gabona,
+        
+    - fa,
+        
+    - méz,
+        
+    - bor.
+        
+- Fő vásárlói elsősorban a **polgárok** voltak.
+    
+
+### A két kereskedelmi útvonal kapcsolata
+
+A **Levantei és a Hanza-kereskedelmi útvonalak** között az **Alpok hágóin** át összekötő útvonalak is haladtak.
