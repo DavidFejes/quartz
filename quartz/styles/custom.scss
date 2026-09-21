@@ -2,7 +2,38 @@
 @use "./variables.scss" as *;
 
 // -------------------------------------------------------------
-// 1. GLOBAL INVISIBLE SCROLLBARS
+// 1. UNIFIED BACKGROUND (SEAMLESS ACROSS ALL COLUMNS & MARGINS)
+// -------------------------------------------------------------
+html,
+body {
+  background-color: var(--light) !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page,
+#quartz-body,
+.quartz-body,
+.sidebar,
+.sidebar.left,
+.sidebar.right,
+.left,
+.right,
+.center,
+article,
+.explorer,
+.explorer-content,
+.folder-outer,
+.folder-container {
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+// -------------------------------------------------------------
+// 2. GLOBAL INVISIBLE SCROLLBARS
 // -------------------------------------------------------------
 * {
   scrollbar-width: none !important;        /* Firefox */
@@ -17,7 +48,7 @@
 }
 
 // -------------------------------------------------------------
-// 2. ENHANCED TYPOGRAPHY & LINKS
+// 3. ENHANCED TYPOGRAPHY & LINKS
 // -------------------------------------------------------------
 h1, h2, h3, h4, h5, h6,
 .article-title,
@@ -76,7 +107,7 @@ pre,
 }
 
 // -------------------------------------------------------------
-// 3. SEARCH & CONTROLS (THEME-SAFE)
+// 4. SEARCH & CONTROLS (THEME-SAFE)
 // -------------------------------------------------------------
 .sidebar.left,
 .left {
@@ -115,7 +146,7 @@ pre,
 }
 
 // -------------------------------------------------------------
-// 4. EXPLORER / FOLDER TREE STYLING
+// 5. EXPLORER / FOLDER TREE STYLING
 // -------------------------------------------------------------
 .explorer {
   font-family: var(--bodyFont);
@@ -167,7 +198,7 @@ pre,
 }
 
 // -------------------------------------------------------------
-// 5. MOBILE FULL-SCREEN FOLDER DRAWER (COVERS ENTIRE PHONE DISPLAY)
+// 6. MOBILE FULL-SCREEN FOLDER DRAWER (COVERS PHONE DISPLAY)
 // -------------------------------------------------------------
 @media all and ($mobile) {
   // Toggle button styling for mobile
@@ -196,7 +227,7 @@ pre,
     width: 100vw;
     height: 100vh;
     z-index: 9999;
-    background-color: var(--light);
+    background-color: var(--light) !important;
     padding: 3.5rem 1.5rem 2rem 1.5rem;
     box-sizing: border-box;
     overflow-y: auto;
