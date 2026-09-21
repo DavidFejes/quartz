@@ -198,10 +198,10 @@ pre,
 }
 
 // -------------------------------------------------------------
-// 6. MOBILE FULL-SCREEN FOLDER DRAWER (COVERS PHONE DISPLAY)
+// 6. MOBILE FULL-SCREEN DRAWER WITH TOP-LEFT CLOSE BUTTON
 // -------------------------------------------------------------
 @media all and ($mobile) {
-  // Toggle button styling for mobile
+  // Regular toggle button when the menu is collapsed
   .sidebar.left button#explorer,
   .sidebar.left .explorer-title {
     display: flex !important;
@@ -219,7 +219,7 @@ pre,
     cursor: pointer;
   }
 
-  // When explorer is OPEN on mobile, make it cover the entire screen
+  // Full-screen drawer covering the phone display when open
   .sidebar.left .explorer:not(.collapsed) .explorer-content {
     position: fixed;
     top: 0;
@@ -228,25 +228,39 @@ pre,
     height: 100vh;
     z-index: 9999;
     background-color: var(--light) !important;
-    padding: 3.5rem 1.5rem 2rem 1.5rem;
+    padding: 4.8rem 1.5rem 2rem 1.5rem; /* Generous top padding so folders don't overlap the close button */
     box-sizing: border-box;
     overflow-y: auto;
     overscroll-behavior: contain;
     animation: fadeIn 0.15s ease-in-out;
   }
 
-  // Floating Close / Back button inside the open full-screen folder drawer
+  // TOP-LEFT CLOSE BUTTON (Pill style with '✕')
   .sidebar.left .explorer:not(.collapsed) button#explorer {
     position: fixed;
-    top: 1rem;
-    right: 1.5rem;
+    top: 1.2rem;
+    left: 1.2rem;
+    right: auto;
     width: auto;
-    z-index: 10000;
-    background: var(--secondary);
-    color: var(--light);
-    border: none;
-    padding: 6px 14px;
-    border-radius: 20px;
+    z-index: 10001;
+    display: inline-flex !important;
+    align-items: center;
+    gap: 6px;
+    background: var(--lightgray) !important;
+    border: 1px solid var(--gray) !important;
+    color: var(--dark) !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-size: 0.85rem !important;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+    &::before {
+      content: "✕";
+      font-weight: bold;
+      color: var(--secondary);
+    }
   }
 }
 

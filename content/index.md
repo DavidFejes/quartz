@@ -1,5 +1,5 @@
 ---
 title: Notes
 ---
-#Stuff
+# Stuff
 [[LEARN]]
