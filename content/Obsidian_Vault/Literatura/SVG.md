@@ -4,3 +4,5 @@
 [[Felvilagosodas.svg]]
 [[Reformacio.svg]]
 [[Barokk.svg]]
+[[Petofi.pdf]]
+[[Petofi.svg]]
