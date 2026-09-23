@@ -4,5 +4,6 @@
 [[Felvilagosodas.svg]]
 [[Reformacio.svg]]
 [[Barokk.svg]]
-[[Petofi.pdf]]
 [[Petofi.svg]]
+[Petofi.svg](obsidian://open?vault=Obsidian_Vault&file=Literatura%2FPetofi%2FPetofi.svg)
+[[Petofi.pdf]]
