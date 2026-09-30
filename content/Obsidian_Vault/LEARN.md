@@ -1,3 +1,1 @@
-[[Petofi.svg]]
-[[Petofi.pdf]]
-![[Petofi.pdf]]
+[[Mult_Ido]]
