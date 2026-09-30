@@ -19,7 +19,8 @@ Kiadója: ==1222 – II. András==.
 A papságra vonatkozó rendelkezések:
 - A tizedet csak terményben lehet szedni, pénzben nem.
 ## Ellenállási záradék:
-Ha a király nem tartja be a törvényeket, a nemesek felszólíthatják erre. Emiatt pedig nem
+==Ha a király nem tartja be== a törvényeket, a ==nemesek felszólíthatják erre==. Emiatt pedig nem
 lehet őket megbüntetni.
-Jelentősége:
-Bizonyítja a rendiség kialakulását. A bárók, a papság és a szerviensek alkottak rendet.
+
+## Jelentősége:
+==Bizonyítja a rendiség kialakulását==. A bárók, a papság és a szerviensek alkottak rendet.
