@@ -198,10 +198,10 @@ A rövid feladatoknál ezeket csak **pontosan leírva** lehet elfogadni.
 
 A fogalmazás helye **ki lesz vonalazva**.
 
-|Esszé|Előírt terjedelem|Maximális túllépés|
-|---|--:|--:|
-|Rövid|110 szó|2–3 sor|
-|Hosszú|220 szó|4–5 sor|
+| Esszé  | Előírt terjedelem | Maximális túllépés |
+| ------ | ----------------: | -----------------: |
+| Rövid  |           110 szó |            2–3 sor |
+| Hosszú |           220 szó |            4–5 sor |
 
 > [!danger] Fontos!  
 > Ha a megengedettnél többet írsz, azt **át kell húzni**, és az azon túli részt **nem értékelik** – még akkor sem, ha pontot érő információ szerepel benne.
