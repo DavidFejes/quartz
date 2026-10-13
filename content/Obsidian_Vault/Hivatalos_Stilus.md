@@ -1,0 +1,3 @@
+Intézményekkel való kommunikáció
+
+szövegtípusok: kérvény, pályázat, rendelet, hivatalos levél, jegyzőkönyv...
