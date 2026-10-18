@@ -3,3 +3,5 @@
 [[Halmazállapot_Molekularisan.pdf]]
 [[Parolgas_Lecsapodas.pdf]]
 [[Legkori_Jelensegek.pdf]]
+[[Hoterjedes_Formai.pdf]]
+[[Munka_Feszultseg_Potencial.pdf]]
