@@ -1,0 +1,4 @@
+**TÉTEL**: Szorzat logaritmusa egyenlõ a tényezõk logaritmusának összegével: $$\log_a (x \cdot y) = \log_a x + \log_a y, \;ahol x, y > 0, a > 0, a \ne 1$$
+**BIZONYÍTÁS**: A logaritmus definíciója alapján: $x=a^{\log_a x}$ és  $y=a^{\log_a y}$= , illetve $x\cdot y=$Nézzük az állítás bal oldalát: log log log loglog ( ) log ( ) log log loga a a ax y x y a a a a ax y a a a x y+⋅ = ⋅ = = + , az azonos alapú hatványok szorzása és a logaritmus definíciója miatt. Így a bizonyítandó állítás igaz. 
+
+**TÉTEL**: Tört logaritmusa megegyezik a számláló és a nevezõ logaritmusának különbségével: log log loga a a x x y y ⎛ ⎞ = −⎜ ⎟ ⎝ ⎠ , ahol x, y > 0, a > 0, a π 1. 
