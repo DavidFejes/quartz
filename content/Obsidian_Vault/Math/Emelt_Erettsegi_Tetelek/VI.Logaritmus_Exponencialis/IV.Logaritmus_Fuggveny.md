@@ -20,4 +20,8 @@ Kapcsolat az exponenciális és a logaritmusfüggvények között:
 | $0 < a < 1$                          | $a>1$                                |
 | ------------------------------------ | ------------------------------------ |
 | ![[Pasted image 20261028103446.png]] | ![[Pasted image 20261028103500.png]] |
-Az exponenciális függvény $a \ne 1$ esetén invertálható, inverze az $f^{-1} : \mathbb{R}^+ \to \mathbb{R},\; f^{-1} (x) = \log_a x; a > 0, a \ne 1$ logaritmusfüggvény. 
+Az **exponenciális függvény** $a \ne 1$ esetén invertálható, inverze az 
+$f^{-1} : \mathbb{R}^+ \to \mathbb{R},\; f^{-1} (x) = \log_a x; \;a > 0, a \ne 1$ logaritmusfüggvény. 
+
+A **logaritmusfüggvény invertálható**, inverze az 
+$f^{-1} : \mathbb{R} \to \mathbb{R}, f^{-1} (x) = a^x;\; a > 0,\; a \ne 1$ exponenciális függvény.
