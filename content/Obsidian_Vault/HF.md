@@ -1,0 +1,4 @@
+==500 szó==
+Mutassa be a ==siker==, a ==boldogság== motívumát a ==19. századi== alkotók műveiben. Törekedjen annak bemutatására, hogy a ==különböző alkotók== hogyan ==értelmezték==, ==ábrázolták== a boldogságkeresés, a siker ==mibenlétét==, annak ==megtalálását== vagy ==elvesztését==. Legalább 3 19. századi alkotás értelmezésével szemléltesse a megadott témát.
+
+A 19.-dik századi költők világnézetét két nagy csoportra lehet bontani. Ezek a romantika korstílusa és a realizmus stílusirányzata. Habár mindkettő egy időben létezett az irodalmi művek témáit, az alkotást ellentétesen közelítik meg. A romantika fő eszménye a természetbe menekülés, amit gyakran kitalált fantáziavilágok kísérnek
