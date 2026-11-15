@@ -44,7 +44,7 @@ A reformáció közvetlen kiváltó oka a búcsúcédulák árusítása volt, am
 
 Tanai gyorsan elterjedtek, és a nyugati kereszténység felekezeti megosztottságához vezettek.
 
-## **3. A katolikus megújulás és az ellenreformáció**
+## **3. A katolikus megújulás és az ellenreformáció**[[3.2_Reformacio_Ellenreformacio]]
 >[!info]
 >A feladat a katolikus megújulással és az ellenreformációval kapcsolatos. (rövid)
 Mutassa be a forrás és ismeretei segítségével, milyen válaszokat adott az ellenreformáció a
@@ -63,7 +63,7 @@ A zsinat emellett megerősítette a papság fegyelmét, előírta a papnevelő i
 
 Az ellenreformáció megerősítette a katolikus egyházat, és megakadályozta a protestantizmus további térnyerését egyes európai területeken.
 
-## **4. Az angol alkotmányos monarchia végrehajtó hatalma**
+## **4. Az angol alkotmányos monarchia végrehajtó hatalma**[[Angol_Polgari_Forradalom]]
 >[!info]
 >A feladat az angol alkotmányos monarchiához kapcsolódik. (rövid)
 Mutassa be a forrás és ismeretei segítségével a végrehajtó hatalom legfőbb intézményét,
@@ -84,3 +84,6 @@ A forrás Robert Walpole példáján mutatja be a miniszterelnöki tisztség kia
 A kormány az uralkodó nevében gyakorolta a végrehajtó hatalmat, de működéséhez szüksége volt a parlament, különösen az alsóház bizalmára. A törvényhozó hatalom a parlament kezében volt, amely ellenőrizte a kormányt.
 
 Az alkotmányos monarchia így a parlamentáris kormányzás és a miniszteri felelősség kialakulásához vezetett.
+
+## **MAGYAR**[[Realizmus.excalidraw.svg]]
+![[Realizmus.excalidraw.svg]]
