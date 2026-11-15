@@ -64,7 +64,7 @@ A zsinat emellett megerősítette a papság fegyelmét, előírta a papnevelő i
 Az ellenreformáció megerősítette a katolikus egyházat, és megakadályozta a protestantizmus további térnyerését egyes európai területeken.
 
 ## **4. Az angol alkotmányos monarchia végrehajtó hatalma**
->
+>[!info]
 >A feladat az angol alkotmányos monarchiához kapcsolódik. (rövid)
 Mutassa be a forrás és ismeretei segítségével a végrehajtó hatalom legfőbb intézményét,
 valamint viszonyát az uralkodóhoz és a törvényhozáshoz!
