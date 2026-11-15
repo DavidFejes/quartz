@@ -1,4 +1,4 @@
-## **1. A földrajzi felfedezések gazdasági hatásai**
+## **1. A földrajzi felfedezések gazdasági hatásai**[[3.1_Nagy_Foldrajzi_Felfedezesek]]
 >[!info]
 >A feladat a földrajzi felfedezésekkel kapcsolatos. (rövid)
 Mutassa be a forrás és ismeretei segítségével, hogyan alakították át a földrajzi felfedezések a
@@ -22,7 +22,7 @@ Nyugat-Európa gazdasági jelentősége megnőtt: Portugália, Spanyolország, m
 
 A kereskedelem súlypontjának áthelyeződése Nyugat-Európa gazdasági megerősödését és Közép-Európa gazdasági lemaradását eredményezte.
 
-## **2. Luther kritikája a katolikus egyházzal szemben**
+## **2. Luther kritikája a katolikus egyházzal szemben**[[3.2_Reformacio_Ellenreformacio]]
 >[!info]
 >A feladat a reformációhoz kapcsolódik. (rövid)
 Mutassa be a forrás és ismeretei segítségével Luthernek a katolikus egyház szervezetét és anyagi
